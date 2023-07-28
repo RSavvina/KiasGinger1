@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="6323d11f-a66a-467e-887c-32d72ce37ea6" ItemType="ProjEnvironment" CreatedBy="Laxmi.Alat" Created="202302060817" GingerVersion="5.1.0.0" Version="4" LastUpdateBy="Savvina.Rousou" LastUpdate="202306080931" />
+<ProjEnvironment Guid="6323d11f-a66a-467e-887c-32d72ce37ea6" Name="VD706" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Applications>
+<EnvApplication Active="True" Guid="65741153-f565-4dcf-ac0d-c7f25ee0ce23" Name="MyPowerBuilderApp" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Dbs>
+<Database ConnectionString="Data Source=(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(Host=adeetkgs)(Port=7009)) (CONNECT_DATA=(SID=TKGSX0))(SERVER=DEDICATED));User Id={USER};Password={PASS};" DBType="Oracle" Guid="75db47e7-899d-4d23-aaba-0e8d982488bd" KeepConnectionOpen="False" Name="New" ParentGuid="00000000-0000-0000-0000-000000000000" Pass="VDAPP706" TNS="(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(Host=adeetkgs)(Port=7009)) (CONNECT_DATA=(SID=TKGSX0))(SERVER=DEDICATED))" User="VDAPP706" />
+</Dbs>
+</EnvApplication>
+</Applications>
+</ProjEnvironment></GingerRepositoryItem>

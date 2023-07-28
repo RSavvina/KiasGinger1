@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="53be505d-faf2-445f-abb9-63a1d9907179" ItemType="BusinessFlow" CreatedBy="Savvina.Rousou" Created="202307250841" GingerVersion="5.1.0.0" Version="13" LastUpdateBy="Savvina.Rousou" LastUpdate="202307281105" />
+<BusinessFlow Guid="53be505d-faf2-445f-abb9-63a1d9907179" Name="Sub activation through OSF" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="DB DELETE GUID AND FETCH VALUES" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="0fccdb77-a9ba-4a85-9281-e5f87b7893ee" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100,00%%" TargetApplication="MyPowerBuilderApp" Type="Regular">
+<Acts>
+<ActExcel Active="True" Description="Excel Action" Guid="8830bafa-4649-474a-bca2-5e0b47915a8a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="8e4915fd-6b61-44a3-bfbf-7c51740c37ae" Param="ExcelActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ReadData" />
+<ActInputValue Guid="b6e23c3d-c93a-4177-bb80-e40564d68d38" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="f65944a6-c858-45aa-84dd-99aee61cc14c" Param="SelectAllRows" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="38171ae4-fc34-4b2a-9cd6-c7256e3a7a86" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\OSF_ACTIVATION.xlsx" />
+<ActInputValue Guid="f20089c2-4ebe-4ad2-91a5-2de363de6f1b" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="d10b06d5-33c1-40af-a31c-59b8581cedf7" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID = 1" />
+<ActInputValue Guid="c645a836-c674-421e-9ad2-e62a8c325937" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="d5243211-b376-434b-bfc2-e10794641b9c" Operator="Equals" Param="TARIFF_OPTION" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="GlobalVariable" StoreToValue="372e6fc3-5a39-484d-9712-f30db2e5cb52" />
+</ReturnValues>
+</ActExcel>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="VDAPP706" DBValidationType="UpdateDB" Description="DataBase Action" Guid="8fd4f4c5-0175-4e8c-bd1f-abba9ed5cf24" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="e29d1d39-321e-4376-b51a-4e73bfbc58f4" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="delete from GUID_LIST" />
+<ActInputValue Guid="096042bc-349c-448a-ba78-2e3895f3d2ca" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="6a2ca893-edfd-485f-893a-ce1de5fe8fab" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="805244aa-ad3e-4909-a82d-d13ee8a5ff28" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="b24cf405-978d-4f4a-b26d-47df3d70edd7" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="3d249c9b-5779-4419-9479-a57b826cc70b" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="dfb07adb-eb27-4310-a2e8-db181e250a20" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDBValidation>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="VDAPP706" DBValidationType="FreeSQL" Description="GET DATE" Guid="fcac4f51-06ed-4d1d-8175-b1a3f909dab9" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="ef01148b-117d-4902-b885-48bfe85f81ba" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SELECT TO_CHAR(logical_date, 'YYYYMMDD') FROM logical_date where rownum = 1" />
+<ActInputValue Guid="b4272af9-b0b4-4aea-8850-92fdec2e7e50" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="532ff757-dc9f-42c4-b719-81379dd823fd" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="eb055954-7411-4795-997c-34074abdad18" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="7836f66d-0ff3-40a8-9b9e-d0384abe6a9e" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c2540e8b-9cc7-46f6-8aa3-d7c995defd99" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="9f54c538-235f-44a8-b71f-c432ec132d72" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="ba182ef0-d931-4349-a1b6-b91985d1803c" Operator="Equals" Param="TO_CHAR(LOGICAL_DATE,'YYYYMMDD')" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="GlobalVariable" StoreToValue="7eccf864-ed78-465d-81ff-6e163883e9a6" />
+</ReturnValues>
+</ActDBValidation>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="VDAPP706" DBValidationType="FreeSQL" Description="GET SERIAL NUMBER" Guid="38beaa61-8813-4e28-958d-8c18c28777be" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="71f48747-c25a-45ea-b9ac-ba7ce1688771" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="select SERIAL_NUMBER from (select SERIAL_NUMBER from serial_item_inv where vo_id='40000001' and sim_status='V' and duobill_ind is null and twin_card_ind='N' and PRE_PROG_SUBSC_NO is  NULL  and sim_type='097' order by sys_creation_date desc) where rownum=1" />
+<ActInputValue Guid="941ccf07-8c7c-4a31-928b-872af47bfbcd" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="b7c229fd-aa59-40f5-a8cc-c3780c45105e" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="0678761e-155c-458c-aad1-6ca678297a1a" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="c72c88a3-7404-49b5-af40-6b6fb58eaae0" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="e0ab285c-7b20-441e-a819-6f43ec5be264" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c63bf093-393b-4983-9c31-556e78cd0dea" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="621294b8-d50c-4b7e-a1ef-7bfdb1d3433f" Operator="Equals" Param="SERIAL_NUMBER" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="GlobalVariable" StoreToValue="44a11a47-dba5-4cf6-9aaa-e9cbe79702c2" />
+</ReturnValues>
+</ActDBValidation>
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="EDIT AND RUN UD FILE" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="9869cd13-9f1a-4b94-a3d2-50147df7ee39" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100,00%%" TargetApplication="Mediation" Type="Regular">
+<Acts>
+<ActAgentManipulation Active="True" Description="Agent Manipulation Action" Guid="46faa5e2-0671-4249-9e80-020ca7d95c17" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="8d9890a3-1297-413c-8120-8989ee0bf664" Param="AgentManipulationActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="StartAgent" />
+</InputValues>
+</ActAgentManipulation>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Console Command Action" Guid="284d59b3-c3a7-48f8-b21d-a3bc365b92d5" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WaitVE="10" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="b511e0f8-e29d-4b7f-a93c-4b0879bddf8b" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ls -ltr" />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Console Command Action_Copy" Guid="13a2c005-4041-44cf-8610-af6bf6c5fb3f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="cb01040f-6485-4b12-8c7c-f89e496c89ed" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="cd /misc/acc-archive/util/UD/Savvina" />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="delete existing rUN_DATE" Guid="360ca576-8304-4da6-be69-36d321773f8a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="00ab5760-663c-4ced-8d6d-0a1ef5386626" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="./activation_script_savvina.sh runtime1" />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="add the RUN DATE" Guid="49aaf2b0-838d-40b6-a934-a34c694c11f3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="05308dbd-cab2-4d6a-9460-a205ed645760" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="awk -v line=9 -v col=9 -v text=&quot;{Var Name=RUN_DATE}&quot; 'BEGIN{FS=OFS=&quot;\t&quot;} NR==line {$0=substr($0, 1, col) FS text substr($0, col+1)} 1' eaiActCtnAsnc_Activation_Credit_Laxmi.ud &gt; temp &amp;&amp; mv temp eaiActCtnAsnc_Activation_Credit_Laxmi.ud" />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="delete existing serial" Guid="96cfde5e-7730-46ae-ad19-afc6d6dd9e6f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="479fbfb3-5d6a-4023-ade4-bfd4159efffe" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="./activation_script_savvina.sh simnumber1" />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="add sim number" Guid="6b0a8f27-fea6-47af-819e-a50693cf6a4a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="42362a76-f95d-4e2e-a68b-2480a9a57c7d" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="awk -v line=132 -v col=13 -v text=&quot;{Var Name=SERIAL_NUMBER_OSF}&quot; 'BEGIN{FS=OFS=&quot;\t&quot;} NR==line {$0=substr($0, 1, col) FS text substr($0, col+1)} 1' eaiActCtnAsnc_Activation_Credit_Laxmi.ud &gt; temp &amp;&amp; mv temp eaiActCtnAsnc_Activation_Credit_Laxmi.ud" />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="delete existing activation date" Guid="8b3b4786-92df-481e-89aa-d18eae8eb926" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="438b4334-f09e-41c8-84bc-edd6c98028c9" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="./activation_script_savvina.sh activationdate1" />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="add the activation date" Guid="d8219119-e8b7-4075-8232-97810dede0f9" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="f36ef397-5d53-4d56-b1c1-c694498f39c2" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="awk -v line=147 -v col=15 -v text=&quot;{Var Name=RUN_DATE}&quot; 'BEGIN{FS=OFS=&quot;\t&quot;} NR==line {$0=substr($0, 1, col) FS text substr($0, col+1)} 1' eaiActCtnAsnc_Activation_Credit_Laxmi.ud &gt; temp &amp;&amp; mv temp eaiActCtnAsnc_Activation_Credit_Laxmi.ud" />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="delete existing tariff_option" Guid="926fcde6-b3c3-4d14-b1fe-a37333a6084c" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="6efa1f3a-8193-49a2-bda7-0f6f06dfafd8" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="./activation_script_savvina.sh tariffoption1" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="add the tariff_option" Guid="e56ff3b0-371f-4d47-9ac0-f3d15133980f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="9cf2c1da-3554-429a-991e-1c3b64fa9892" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="awk -v line=147 -v col=13 -v text=&quot;{Var Name=Tariff_Option_OSF}&quot; 'BEGIN{FS=OFS=&quot;\t&quot;} NR==line {$0=substr($0, 1, col) FS text substr($0, col+1)} 1' eaiActCtnAsnc_Activation_Credit_Laxmi.ud &gt; temp &amp;&amp; mv temp eaiActCtnAsnc_Activation_Credit_Laxmi.ud" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="RUN UD FILE" Guid="8d33f78a-8289-4f26-a7c9-eb462756d7f1" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3665a8c4-85df-4359-8cb8-bf447ee18965" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ud32 &lt;eaiActCtnAsnc_Activation_Credit_Laxmi.ud" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActConsoleCommand>
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="RUN JOB" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="143b2b2b-2331-4bf0-a550-db2309278968" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100,00%%" TargetApplication="vdoln726" Type="Regular">
+<Acts>
+<ActAgentManipulation Active="True" Description="Agent Manipulation Action" Guid="843e2e84-95d0-46d2-b33a-a73a1ed139d0" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="723883c7-8cfa-496a-adcb-baeca2254e85" Param="AgentManipulationActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="StartAgent" />
+</InputValues>
+</ActAgentManipulation>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="RUN ACTIVATION JOB" Guid="42bf8fb0-22e6-4b83-9467-4fddf6c22614" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WaitVE="30" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="93f87e19-d288-4c3d-a1ac-4f4c79848845" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="runjobs CSACTIVDMN CSACTIVDMN" />
+</InputValues>
+</ActConsoleCommand>
+</Acts>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="afcad699-fc67-4db3-907c-00b2643d880f" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="0fccdb77-a9ba-4a85-9281-e5f87b7893ee" ActivityName="DB DELETE GUID AND FETCH VALUES" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="d43c1722-f33e-4a2d-8677-f94cc5427952" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="9869cd13-9f1a-4b94-a3d2-50147df7ee39" ActivityName="EDIT AND RUN UD FILE" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="f0aa1d4a-ad40-4a1e-891e-6f56f85449cc" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="143b2b2b-2331-4bf0-a550-db2309278968" ActivityName="RUN JOB" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="77010689-be68-4f9f-86c9-a84c2abfb5cc" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyPowerBuilderApp" Guid="e2256d5d-ee81-4711-bcbb-5669c488dc0a" LastExecutingAgentName="MyPowerBuilderApp - Agent 1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Mediation" Guid="01c7fec2-2ea4-4a6e-8943-e1f965b0a7dc" LastExecutingAgentName="vdoln706" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="vdoln726" Guid="9e143266-9a45-45f2-985f-fb4c7ce31949" LastExecutingAgentName="vdwrk706" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>

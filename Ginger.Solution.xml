@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="4cab4c60-b1f2-4dd6-96ed-58e7b7cbeb4d" ItemType="Solution" CreatedBy="Laxmi.Alat" Created="202302060750" GingerVersion="5.1.0.0" Version="23" LastUpdateBy="Savvina.Rousou" LastUpdate="202307281038" />
+<Solution EncryptedValidationString="WBUfgxvm5/P9nhOEcFEp3w==" Guid="4cab4c60-b1f2-4dd6-96ed-58e7b7cbeb4d" Name="KIAS-AUTO" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ApplicationPlatforms>
+<ApplicationPlatform AppName="MyPowerBuilderApp" Guid="8d939981-e2ad-42d5-9e96-c65c38706bf4" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" />
+<ApplicationPlatform AppName="MyWindowsApp" Description="Windows Application" Guid="c470f476-e20b-4595-81be-916d419bcdb5" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Windows" />
+<ApplicationPlatform AppName="vdoln726" Description="Amdocs Mediation" Guid="633a1ac3-e735-41f8-9f45-6a16f97a0a9d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" />
+<ApplicationPlatform AppName="MyJavaApp" Description="Java Application" Guid="b609a1c4-a2ec-4b5b-b205-7d50352789a1" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Java" />
+<ApplicationPlatform AppName="MyWebApp" Description="Web Application" Guid="55e38ba8-efb6-438c-ab42-0a6f98ced46b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" />
+<ApplicationPlatform AppName="Mediation" Description="Amdocs Mediation" Guid="ea0eab5b-68b3-4648-a7d3-a07a705cb1c8" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" />
+<ApplicationPlatform AppName="vdwrk727" Description="Amdocs Mediation" Guid="0f2f5a8f-31c0-4aef-8298-d8c5793bba9d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" />
+<ApplicationPlatform AppName="vdwrk725" Description="Amdocs Mediation" Guid="b5607e8c-8786-47c2-9346-c6de67fe8a10" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" />
+<ApplicationPlatform AppName="MyPowerBuilderApp2" Description="Power Builder Application" Guid="87f701c4-1346-438f-9873-e526006dea26" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" />
+<ApplicationPlatform AppName="MyPowerBuilderApp3" Description="Power Builder Application" Guid="eb2a91d6-4e71-4554-a678-72f1d1aecb13" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" />
+<ApplicationPlatform AppName="acoln116" Description="Amdocs Mediation" Guid="b1debdfe-cc5e-429a-a224-7b931bd9e601" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" />
+</ApplicationPlatforms>
+
+<ApplitoolsConfiguration>
+<ApplitoolsConfiguration Guid="5a74df89-8c9a-4dbf-8d08-3b94ff0f7bba" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ApplitoolsConfiguration>
+
+<ExecutionLoggerConfigurationSetList>
+<ExecutionLoggerConfiguration DataPublishingPhase="PostExecution" DeleteLocalDataOnPublish="No" ExecutionLoggerConfigurationExecResultsFolder="~\ExecutionResults" ExecutionLoggerConfigurationIsEnabled="True" ExecutionLoggerConfigurationMaximalFolderSize="250" Guid="fb7bb82d-270e-4a29-adf0-b461bdecce99" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" PublishLogToCentralDB="No" SelectedDataRepositoryMethod="LiteDB" Seq="0" />
+</ExecutionLoggerConfigurationSetList>
+
+<HTMLReportsConfigurationSetList>
+<HTMLReportsConfiguration Guid="47dc5d5a-6766-498a-9b95-90651af11d09" HTMLReportConfigurationMaximalFolderSize="0" HTMLReportsFolder="~\HTMLReports" HTMLReportTemplatesSeq="1" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" />
+</HTMLReportsConfigurationSetList>
+
+<SealightsConfiguration>
+<SealightsConfiguration Guid="f221836a-2739-4cae-8e33-6c2f94231286" ParentGuid="00000000-0000-0000-0000-000000000000" SealightsLog="No" SealightsReportedEntityLevel="BusinessFlow" SealightsTestRecommendations="No" />
+</SealightsConfiguration>
+
+<SolutionCategories>
+<SolutionCategory Category="Product" Guid="0cf58e80-1b79-428b-9ea8-75f5b074e921" ParentGuid="00000000-0000-0000-0000-000000000000">
+<CategoryOptionalValues>
+<SolutionCategoryValue Guid="97592aa6-2ef8-43a0-96dc-62a749ad9988" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Product 1" />
+<SolutionCategoryValue Guid="4783de2e-0b09-4a17-ad1a-a0c62f8d48f4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Product 2" />
+</CategoryOptionalValues>
+</SolutionCategory>
+<SolutionCategory Category="TestType" Guid="4a433abd-3e4f-416c-a198-3d56e7af9e8e" ParentGuid="00000000-0000-0000-0000-000000000000">
+<CategoryOptionalValues>
+<SolutionCategoryValue Guid="8d0eef8e-4aa7-4709-b33d-256fabff1bd1" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Regression" />
+<SolutionCategoryValue Guid="c44fee10-9534-4c9f-98d1-3b7fb3c2d558" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Progression" />
+<SolutionCategoryValue Guid="e246b46e-c57f-4b85-8981-ce671a983ad6" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sanity" />
+<SolutionCategoryValue Guid="eda90aa8-2e1d-4190-aae4-7ea9f4532cf0" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Acceptance" />
+<SolutionCategoryValue Guid="d0d42bdc-939a-4af3-aefb-094bc9d775b1" ParentGuid="00000000-0000-0000-0000-000000000000" Value="End to End" />
+<SolutionCategoryValue Guid="7f9d3d73-54e7-48e3-af64-d4f7d1461e10" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Security" />
+<SolutionCategoryValue Guid="4305587a-8df9-43ff-9718-e05d711fbf63" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Performance" />
+</CategoryOptionalValues>
+</SolutionCategory>
+<SolutionCategory Category="Release" Guid="048b12b9-671f-4162-a6f2-c825aeb1e2c2" ParentGuid="00000000-0000-0000-0000-000000000000">
+<CategoryOptionalValues>
+<SolutionCategoryValue Guid="b71811b9-70eb-41e2-b32a-890a9430a318" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Release 1" />
+<SolutionCategoryValue Guid="e7cd5bc4-73de-42c0-bbbb-5f94c3cee1bb" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Release 2" />
+</CategoryOptionalValues>
+</SolutionCategory>
+<SolutionCategory Category="Iteration" Guid="bfc12d5f-97b0-448f-8504-1eb6e480b560" ParentGuid="00000000-0000-0000-0000-000000000000">
+<CategoryOptionalValues>
+<SolutionCategoryValue Guid="91bcd6a7-4bfa-402e-abe9-faaba11e5e73" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Iteration 1" />
+<SolutionCategoryValue Guid="ae777442-c27c-4d81-8bb6-7116f0fcd723" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Iteration 2" />
+</CategoryOptionalValues>
+</SolutionCategory>
+<SolutionCategory Category="UserCategory1" Guid="6f4491e0-64e3-49aa-a2f3-02707973a9b6" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<SolutionCategory Category="UserCategory2" Guid="b7134514-9aaf-4f81-8c0a-ea185edb5efb" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<SolutionCategory Category="UserCategory3" Guid="63e8c258-cf37-4eb1-ad23-587ce6327001" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</SolutionCategories>
+
+<Variables>
+<VariableString Guid="63121752-a288-466c-a05a-11b0f2a97f3a" InitialStringValue="105683072" MappedOutputType="None" Name="BAN" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="372e6fc3-5a39-484d-9712-f30db2e5cb52" MappedOutputType="None" Name="Tariff_Option_OSF" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="44a11a47-dba5-4cf6-9aaa-e9cbe79702c2" InitialStringValue="04030423101514" MappedOutputType="None" Name="SERIAL_NUMBER_OSF" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="7eccf864-ed78-465d-81ff-6e163883e9a6" InitialStringValue="20230620" MappedOutputType="None" Name="RUN_DATE" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="f3d78675-ffcf-4632-aebd-45292695b9c3" MappedOutputType="None" Name="FINAL_PPC_OUTPUT" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="38ccef2a-91cd-4214-89b4-3edeb8e8b91a" InitialStringValue="22" MappedOutputType="None" Name="FIRST_VALUE_SIMULATOR" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="deede430-ebfe-4247-bba0-810f51fcd012" InitialStringValue="60" MappedOutputType="None" Name="SECOND_VALUE_SIMULATOR" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="381afa0c-5110-4473-b7f3-7ce35e0793c8" InitialStringValue="9002019" MappedOutputType="None" Name="THIRD_VALUE_SIMULATOR" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="620f0528-3b3a-4530-a42c-dfe578f883e2" InitialStringValue="0322609002019" MappedOutputType="None" Name="FIRST_SIM" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="256b5924-fdeb-4c68-ba67-84ed9024aaa1" InitialStringValue="&#xD;&#xA;ls -ltr *extract* | tail -n 1&#xD;&#xA;-rw-rw-r-- 1 acwrk117 mntst 200590 Jul  3 10:12 rms.RMSPPCXRCeg..input.extract_73438231&#xD;&#xA;PUC_400_DETACC3D_acwrk117@adekatas:/users/acwrk117/var/puc/projs/rms/interfaces/output/Jul/03 $ &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" MappedOutputType="None" Name="Extract_File" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="aed46c2d-6830-4699-896d-e401aa706593" InitialStringValue="1008095" MappedOutputType="None" Name="CURRENT_IMSI_VALUE" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="f4ec9b68-064d-4a82-935f-021efa66b155" InitialStringValue="04" MappedOutputType="None" Name="HLR" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="ee7a9689-1b47-4331-a76c-876912f552b5" InitialStringValue="1525" MappedOutputType="None" Name="NDC" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="aca2140f-2b11-45e1-b373-8606dbc9e4aa" InitialStringValue="10" MappedOutputType="None" Name="TOTAL_COUNT_OF_CARDS" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="6ab0a98d-9b9e-4851-a8f2-65bae0ab83f8" InitialStringValue="54204500" MappedOutputType="None" Name="ITEM_ID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="73cce878-88cb-4b69-8ef5-b5b860594bd7" InitialStringValue="/users/acwrk117/var/puc/projs/rms/interfaces/output/Jul/03/" MappedOutputType="None" Name="Final_PPC_File_path" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="d4123c0b-1ed1-476a-9174-40a568e55653" InitialStringValue="rms.RMSPPCXRCeg..input.extract_73438231" MappedOutputType="None" Name="Final_extract_file" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="a8eb4a90-7350-4190-aaaf-404b65a60593" InitialStringValue="rms.RMCPPCESIMRCeg.20230703_081300.input.73438231" MappedOutputType="None" Name="Final_Input_file_of_simulator" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="86a5ba25-e736-49d3-9151-1ba177d9fda7" MappedOutputType="None" Name="FINAL_INPUT_FILE" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="c2a00a8f-5966-4494-a287-72ce690b9afd" MappedOutputType="None" Name="BAN no" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="b23294e2-e3c3-41f8-8d43-03acb0dffd9e" InitialStringValue="1629697461" MappedOutputType="None" Name="MSISDN" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+
+<VRTConfiguration>
+<VRTConfiguration DifferenceTolerance="0.0" FailActionOnCheckpointMismatch="Yes" Guid="6539191a-baaa-4b9d-ac47-8acea764a507" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</VRTConfiguration>
+</Solution></GingerRepositoryItem>

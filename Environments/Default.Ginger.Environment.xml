@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="e7123ab5-7465-43c5-8ffb-10e336645972" ItemType="ProjEnvironment" CreatedBy="Laxmi.Alat" Created="202302060751" GingerVersion="5.1.0.0" Version="8" LastUpdateBy="Savvina.Rousou" LastUpdate="202307070823" />
+<ProjEnvironment Guid="e7123ab5-7465-43c5-8ffb-10e336645972" Name="Default" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Applications>
+<EnvApplication Guid="6199274e-bedf-4488-a55a-8c522fb729ea" Name="MyPowerBuilderApp" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Dbs>
+<Database ConnectionString="Data Source=(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(Host=adeetkgs)(Port=7009)) (CONNECT_DATA=(SID=TKGSX0))(SERVER=DEDICATED));User Id={USER};Password={PASS};" DBType="Oracle" Guid="f9568159-4aaf-49a7-a815-60c7ae8a41f3" Name="VDAPP726" ParentGuid="00000000-0000-0000-0000-000000000000" Pass="VDAPP726" TNS="(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(Host=adeetkgs)(Port=7009)) (CONNECT_DATA=(SID=TKGSX0))(SERVER=DEDICATED))" User="VDAPP726" />
+<Database ConnectionString="Data Source=(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(Host=adeetkbs)(Port=7008)) (CONNECT_DATA=(SID=TKBSX0))(SERVER=DEDICATED));User Id={USER};Password={PASS};" DBType="Oracle" Guid="f25a8527-9978-4a1e-88d5-33ff60724de9" KeepConnectionOpen="False" Name="VDAPP323" ParentGuid="00000000-0000-0000-0000-000000000000" Pass="VDAPP323" TNS="(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(Host=adeetkbs)(Port=7008)) (CONNECT_DATA=(SID=TKBSX0))(SERVER=DEDICATED))" User="VDAPP323" />
+</Dbs>
+</EnvApplication>
+<EnvApplication Active="True" Guid="5797a002-4aa6-4378-988d-fcb169f273dc" Name="Mediation" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Dbs>
+<Database ConnectionString="Data Source=(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(Host=adeetkbs)(Port=7008)) (CONNECT_DATA=(SID=TKBSX0))(SERVER=DEDICATED));User Id={USER};Password={PASS};" DBType="Oracle" Guid="9964781d-ffd4-45a9-b9a1-6aa318af07db" Name="VDAPP323" ParentGuid="00000000-0000-0000-0000-000000000000" Pass="VDAPP323" TNS="(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(Host=adeetkbs)(Port=7008)) (CONNECT_DATA=(SID=TKBSX0))(SERVER=DEDICATED))" User="VDAPP323" />
+<Database ConnectionString="Data Source=(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(Host=10.132.80.71)(Port=7005)) (CONNECT_DATA=(SID=DETACC3D))(SERVER=DEDICATED));User Id={USER};Password={PASS};" DBType="Oracle" Guid="82e45b75-a0e6-48c6-a97b-7aad7f7f9725" Name="ACAPP116" ParentGuid="00000000-0000-0000-0000-000000000000" Pass="ACAPP116&#xD;&#xA;" TNS="(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(Host=10.132.80.71)(Port=7005)) (CONNECT_DATA=(SID=DETACC3D))(SERVER=DEDICATED))" User="ACAPP116" />
+</Dbs>
+</EnvApplication>
+</Applications>
+</ProjEnvironment></GingerRepositoryItem>

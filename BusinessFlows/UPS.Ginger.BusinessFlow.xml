@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="fc2d86cc-a7c8-48c8-b917-683183368646" ItemType="BusinessFlow" CreatedBy="Deepak.Batham" Created="202306081250" GingerVersion="5.1.0.0" Version="94" LastUpdateBy="Savvina.Rousou" LastUpdate="202306121301" />
+<BusinessFlow Guid="fc2d86cc-a7c8-48c8-b917-683183368646" Name="UPS" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="d0318d1d-bced-4e13-8640-c644166a5732" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100,00%%" TargetApplication="Mediation" Type="Regular">
+<Acts>
+<ActAgentManipulation Active="True" Description="Agent Manipulation Action" Guid="0b559a0e-f184-4d92-96aa-80f69840797d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="5bcd5a13-c0bd-48c1-98fb-154f3b19c1bc" Param="AgentManipulationActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="StartAgent" />
+</InputValues>
+</ActAgentManipulation>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Console Command Action_Copy2" Guid="311ebbc3-e564-4f04-85ca-9d05c2e54554" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WaitTime="10" WaitVE="10" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="138382c7-1257-44e7-810b-4f9329e2acbb" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="stop_jobs_clear_logs; stop_q0; " />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="b940b252-a168-400f-917e-6cfc6afac812" Operator="Equals" Param="Result" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="q0_1_Write" />
+</ReturnValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Console Command Action" EnableRetryMechanism="True" Guid="6cdf08c4-57d1-4903-8147-3f114f4de6b7" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WaitTime="10" WaitVE="15" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a9252adb-b31c-4256-8c79-1396a70f80d5" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="s" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="c3deff65-8ff5-4f93-81de-3e0f5cdfba77" Operator="Equals" Param="Result" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="q0_1_Write" />
+</ReturnValues>
+</ActConsoleCommand>
+<ActExcel Active="True" Description="Excel Action" Guid="ee74cb37-9647-4cfd-8407-95b6c76d507a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="15" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="9264a0d6-0a8a-45ca-b427-f067938d12c8" Param="ExcelActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WriteData" />
+<ActInputValue Guid="ac4c00f0-0b3b-4888-9401-9bb8ca1acc3d" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Value='{CS Exp=@&quot;{Var Name=q0_1_Write}&quot;.Substring(162,1)}'" />
+<ActInputValue Guid="bddedee9-39da-4431-a18d-31bf8fe82bda" Param="SelectAllRows" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="44b6233a-bd7d-454d-8e87-238a6a0882c9" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\UPS.xlsx" />
+<ActInputValue Guid="cae1c324-d260-4083-8ea1-24466596fb3a" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="q0_before_job" />
+<ActInputValue Guid="b9ce0d92-4dbe-449d-87d7-a9ebb1d92db5" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="q0=1" />
+<ActInputValue Guid="b9652f93-d054-47f5-8a35-b2f9d1717453" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="q0" />
+<ActInputValue Guid="14b7bf0d-5b01-44f5-ac92-9ce4d42bb53d" Param="SetDataUsed" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActExcel>
+<ActExcel Active="True" Description="Excel Action" EnableRetryMechanism="True" Guid="feacbdf5-0913-4205-9a5c-3d994c2291ed" MaxNumberOfRetries="1" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="5dd6d329-fc9c-4b62-b5c9-e8b342107e8b" Param="ExcelActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ReadData" />
+<ActInputValue Guid="380f7003-623b-4bf6-b4f2-7d34f04c3271" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="30e8cad2-9023-4e01-8569-7d36a5ba1ed2" Param="SelectAllRows" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="477b23b8-c7cf-481d-af58-f6494ce2d8fa" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\UPS.xlsx" />
+<ActInputValue Guid="556f0332-d943-4fc7-afa9-95dc5ceb2b78" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="q0_before_job" />
+<ActInputValue Guid="7bcd0a59-9db8-4c63-8b21-def7752dc8c7" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="q0=1" />
+<ActInputValue Guid="e2436112-2f5c-4b5e-9615-5f5a99423686" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Value" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="b6d931f1-9258-4c91-aa02-25e46b674725" mExpected="0" Operator="Equals" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="q0_2_Read" />
+</ReturnValues>
+</ActExcel>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Console Command Action" Guid="4d78007c-179a-4d84-9723-ada9b5e1d86a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="2f7b89ef-06b0-4a6a-ac66-ebfe12d137e7" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="start_q0; start_grd;" />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Console Command Action_Copy" Guid="cced50cc-116b-44fe-aca7-40083aa26cdb" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WaitVE="15" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="42faa209-f2ab-43ab-9ee9-2108da579746" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="s" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="3b59500a-87b9-4f3f-b1fb-84c43e79e292" Operator="Equals" Param="Result" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="q0_3_Write" />
+</ReturnValues>
+</ActConsoleCommand>
+<ActExcel Active="True" Description="Excel Action_Copy" Guid="9f5dc129-9415-4345-9dc5-7d6c9fadf722" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="10" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="51e689f3-b65f-4c0d-a961-c02ae8343cde" Param="ExcelActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WriteData" />
+<ActInputValue Guid="11186ccc-3355-463e-9690-10d9cf0df099" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Value={CS Exp=@&quot;{Var Name=q0_3_Write}&quot;.Substring(162,1)}" />
+<ActInputValue Guid="eb7dd90a-6b8d-4a6e-8600-4cc2dd525cfb" Param="SelectAllRows" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="d37f3a93-a96d-46c3-a163-fae408e6c4fc" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\UPS.xlsx" />
+<ActInputValue Guid="51934de5-7a6e-4fde-95c4-0e7c3864ac97" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="q0_after_job" />
+<ActInputValue Guid="bc8e95d7-7434-47da-944d-364fd505b21c" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[q0] =1" />
+<ActInputValue Guid="ada36427-29c8-4e76-ac9a-3613c597240e" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="q0" />
+</InputValues>
+</ActExcel>
+<ActExcel Active="True" Description="Excel Action_Copy2" Guid="67e05b63-82fa-4611-bb0d-fcf7bb746877" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="15" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d0884dd8-c583-4eea-9fc7-2a193304df64" Param="ExcelActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ReadData" />
+<ActInputValue Guid="11d0244b-158e-4880-ae62-053310e8a5c4" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="3fcf9102-607c-4b5a-91f5-826843334aff" Param="SelectAllRows" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="89f20ecb-1bc4-41af-90e6-038eeb39c41d" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\UPS.xlsx" />
+<ActInputValue Guid="1cbb178c-1a73-4c31-8773-435e934fa933" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="q0_after_job" />
+<ActInputValue Guid="85836ccc-b057-4e4b-8fc0-368b34becdfe" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="q0=1" />
+<ActInputValue Guid="0eef40c9-7b32-4db8-a588-63a6e37f5785" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Value" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="620b60e3-a546-447a-aef5-74db55caae2e" mExpected="3" Operator="Equals" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="q0_4_Read_" />
+</ReturnValues>
+</ActExcel>
+<ActDBValidation Active="True" AppName="Mediation" DBName="VDAPP323" DBValidationType="FreeSQL" Description="DataBase Action" Guid="5d61005f-cf52-4952-bdba-bfd048855185" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="e35aa860-7249-438d-8dab-1510afc8993d" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SELECT SRV_TRX_S_NO,SRV_STS_CD,SRV_TRX_TP_CD, subscriber_no, ban ,trx_desc,err_cd,imsi  FROM srv_trx_repos WHERE srv_trx_s_no=(SELECT max(srv_trx_s_no) FROM srv_trx_repos)" />
+<ActInputValue Guid="b5ab42b5-de55-41f5-b33e-23c3586e8285" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="4ae86842-2950-4ef3-a6c8-ae955381aaa4" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="71979a70-bc56-4bf8-9837-2a1193cb4758" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="0a1f4c03-9184-4049-9926-65d75a6c89ed" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b444efd5-195d-49a8-8bcc-cd75ba8b0a8d" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="f69a682e-827d-4dfb-89a6-ff637ab348d1" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="98848f16-365b-493d-908f-6b412777ae2e" mExpected="CS" Operator="Equals" Param="SRV_STS_CD" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="SRV_STS_CD" />
+<ActReturnValue Active="True" Guid="1c00893c-095d-4a3a-a38f-79db6dd7750a" Operator="Equals" Param="SRV_TRX_S_NO" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="SRV_TRX_S_NO" />
+<ActReturnValue Active="True" Guid="353deca5-6344-4197-a3f9-1109a02a2395" Operator="Equals" Param="SRV_TRX_TP_CD" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="SRV_TRX_TP_CD" />
+<ActReturnValue Active="True" Guid="8bcceef3-c56d-443e-a57d-230f6283c053" Operator="Equals" Param="SUBSCRIBER_NO" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="SUBSCRIBER_NO" />
+</ReturnValues>
+</ActDBValidation>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Console Command Action" Guid="ad24fa52-cef7-4d20-8b6d-e5f39ca4e006" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WaitVE="10" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="dc31c273-320c-4823-b7b1-21ddc6e2629a" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="stop_q0;" />
+</InputValues>
+</ActConsoleCommand>
+</Acts>
+
+<Variables>
+<VariableString Guid="68b3e30d-a75e-43c7-ba39-0638de09c74b" InitialStringValue="&#xD;&#xA;&#xD;&#xA;" MappedOutputType="None" Name="q0_1_Write" ParentGuid="d0318d1d-bced-4e13-8640-c644166a5732" ParentName="UPS\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="5093ce3c-bb02-4a05-9541-384ef41d443d" InitialStringValue="CS" MappedOutputType="None" Name="SRV_STS_CD" ParentGuid="d0318d1d-bced-4e13-8640-c644166a5732" ParentName="UPS\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="879072f9-ed35-4163-8a2d-c0e33bfb3dc3" InitialStringValue="AVG" MappedOutputType="None" Name="SRV_TRX_TP_CD" ParentGuid="d0318d1d-bced-4e13-8640-c644166a5732" ParentName="UPS\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="31d736c1-fe8c-400a-ab2e-ce5a990820c9" InitialStringValue="1720530355" MappedOutputType="None" Name="SUBSCRIBER_NO" ParentGuid="d0318d1d-bced-4e13-8640-c644166a5732" ParentName="UPS\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="336271df-1e11-4fa7-8ef7-13a4e569bd4b" InitialStringValue="43696" MappedOutputType="None" Name="SRV_TRX_S_NO" ParentGuid="d0318d1d-bced-4e13-8640-c644166a5732" ParentName="UPS\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="92b4ec64-3402-4223-9cb5-8060525e7b87" InitialStringValue="&#xD;&#xA;&#xD;&#xA;" MappedOutputType="None" Name="q0_3_Write" ParentGuid="d0318d1d-bced-4e13-8640-c644166a5732" ParentName="UPS\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="79ffbb41-4fab-490c-b8cd-e5eef98e500c" InitialStringValue="0" MappedOutputType="None" Name="q0_4_Read_" ParentGuid="d0318d1d-bced-4e13-8640-c644166a5732" ParentName="UPS\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="45bd9183-22a7-43ed-b777-507a0499968b" InitialStringValue="0" MappedOutputType="None" Name="q0_2_Read" ParentGuid="d0318d1d-bced-4e13-8640-c644166a5732" ParentName="UPS\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="339295f3-6997-4c40-b8ae-3eda7cdf6bc6" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d0318d1d-bced-4e13-8640-c644166a5732" ActivityName="Activity 1" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="8e542a1c-cf6e-4786-9ae7-c929ed421823" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="Mediation" Guid="52e22780-b9d5-44ea-864f-723f99f8792e" LastExecutingAgentName="Mediation - Agent 1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>

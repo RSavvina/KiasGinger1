@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="bb83726b-5725-41cf-a46c-4ef35c292e09" ItemType="Activity" CreatedBy="Laxmi.Alat" Created="202303070743" GingerVersion="5.1.0.0" Version="2" LastUpdateBy="Laxmi.Alat" LastUpdate="202303070743" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="bb83726b-5725-41cf-a46c-4ef35c292e09" ParentGuid="bb83726b-5725-41cf-a46c-4ef35c292e09" PercentAutomated="97,00%%" TargetApplication="MyPowerBuilderApp" Type="Regular">
+<Acts>
+<ActUIElement Active="True" Description="UI Element Action. Switch" Guid="64da01c2-5ff9-4a23-9fa6-0487545d5370" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="1673c1a1-9782-41a4-8dfe-79d218f56e48" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="a155b73d-2bb0-4457-8629-185b1390fc06" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="f6c04995-f84a-46b6-b9f8-70241559c2ff" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="4b97ad78-bbf4-401b-ba52-69f36958a332" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Window" />
+<ActInputValue Guid="dc363333-a1f8-4ffe-8ef3-b10011bd99b7" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Switch" />
+<ActInputValue Guid="d2847ff7-775a-4899-b7d7-1fbc98ad15b4" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="81d50c0c-01c3-4d2b-b84d-a2e7006d2a6e" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Credit - Customer Service Management" />
+<ActInputValue Guid="8454b31a-fd46-4f88-b347-12b1aaa519a7" Param="SyncTime" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30" />
+<ActInputValue Guid="3f28dc58-8381-45ab-ae81-57d4ae3c80a5" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="94b54190-6958-4001-8606-b7e295ab93f0" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="87046621-b753-4a09-b54c-e161c9dd044e" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="d8374b32-d41c-44de-a4c5-94741205c49e" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActMenuItem Active="True" Description="Expand Topics Menu Item" Guid="e4da819a-3908-4aab-bd7d-04ae8a71f308" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="848bcfa5-9d91-4f07-8ba0-225718e338e9" Param="MenuAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="ce3c28da-3d1b-4367-857e-e106f002e507" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a4c48388-c335-4907-a477-27992745c731" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="f04bac9a-9af5-4e60-ac83-fc41fb5cae21" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Topics" />
+</InputValues>
+</ActMenuItem>
+<ActSendKeys Active="True" Description="Send Keys Action" Guid="b073f7fe-b854-453a-921b-ce7ef993f8a5" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="27af0611-0e4c-403b-b6ef-e139492325c5" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="71469f0c-05f8-4104-bba6-18ba9cab10f5" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Credit - Customer Service Management" />
+<ActInputValue Guid="9eb1ac08-ad64-4271-84de-dcadaaad7819" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="99ac37e3-d69d-4b57-ad35-d2cfa7df35cf" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="8fd5f72c-8218-480c-b09f-ace579a3e975" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{DOWN}{DOWN}{ENTER}" />
+</InputValues>
+</ActSendKeys>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="New" DBValidationType="FreeSQL" Description="DataBase Action" Guid="34186924-3308-49ae-b466-344f8839cdfd" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="ff80a208-5de2-4dc0-880e-b9e0ccce44df" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="select ban from (select ban from billing_account where ban_status='O' and SKELETON_CONTRACT_NUM IS NULL order by sys_creation_date desc) where rownum=1" />
+<ActInputValue Guid="73f1f50a-e558-4e48-966f-680fc7f033cb" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="acc48282-7bad-482e-8277-69a33c0f9ff7" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="9fc784d1-7004-493e-810e-acf67685603e" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="2384a7e5-81d4-4b95-a284-619b82461881" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ec940578-961c-4a0a-aaa0-4dd4eb27721e" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="cf1de5c3-acb4-475d-a498-0e07ec16f077" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="e06afac1-09cc-43ae-8725-b422a69a70e4" Operator="Equals" Param="BAN" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="New Variable Number" />
+</ReturnValues>
+</ActDBValidation>
+<ActPBControl Active="True" Description="Set edit (11) Value" Guid="4ceb9ad5-28cd-4a43-a36e-d27bad463a58" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3246ea90-084f-4698-affb-122b5e9aa216" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+<ActInputValue Guid="9f518eb7-451f-4a5b-94fc-37135bbcadfd" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=New Variable Number}" />
+<ActInputValue Guid="67598373-e1fa-45a9-a40c-1e7ca65814d5" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="1d0a2ec1-20c3-4005-8bff-3ddf9c0666b4" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Workspace/Select BAN - Currency EURO/[AutomationId:1004]/[AutomationId:1002]/[AutomationId:11]" />
+</InputValues>
+</ActPBControl>
+<ActSendKeys Active="True" Description="Send Keys Action" Guid="70f18b80-6e44-4fca-b9f9-951199a861b8" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="7afecdbe-a7b5-40ee-a22c-a32ee10af4f8" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="e401ddb9-2f69-4647-94c4-348770190651" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Credit - Customer Service Management" />
+<ActInputValue Guid="0488010d-34ef-4694-89bb-b864f56c2b2b" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="fca03694-2177-4b4f-8f44-f7e2e53f932c" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="b8328b3c-de39-4e3c-9c26-fca311f88e3b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Click Button Retrie&amp;ve" Guid="66ddd689-e605-4e12-8f71-99fdd912de2b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="10" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="0728b64c-cb3d-41cf-bbbb-e4e5511c08ea" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="f2e20399-2fb6-4b63-9543-d9b9c5366638" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="fb8bc8af-ef30-4723-b030-8a2a0e76b379" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="ad988817-aa5e-4e39-a977-96c97c910b7a" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Workspace/Select BAN - Currency EURO/Retrieve" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Set compaddr Value" Guid="e731deee-eb9d-4687-b561-78460d9b3e3b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="5c5bea3e-49fa-4dfe-ba41-327df385bd87" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="DoubleClick" />
+<ActInputValue Guid="eb047ba5-cf7a-419e-9df5-a60024d50803" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="772e1a82-51c9-4460-8e12-d2478f5f49ea" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="0c02461c-3f50-4acc-befb-1b9a57c9b6ed" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Workspace/Select BAN By BAN - Currency EURO/[AutomationId:1000]/compaddr" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Get Title title bar" Guid="43776c11-26b7-49ad-b0e2-6eac4ee6fb26" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="245f59e0-0f25-456f-b5e2-2c15ab64db05" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Action_Executed" Value="06b53b0d-1479-40f9-9e5e-c45947b1fbf0#GUID_NAME#Information OK button" />
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="42dda53d-3b18-4d2b-8474-2ecbe77032d3" Operator="ActionFailed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Pending" Value="fbf01f4e-dbad-4428-9378-f16e52a14bd1#GUID_NAME#Expand Actions Menu Item" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="15288d99-4394-4d95-b79f-79b4f56a8b64" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GetTitle" />
+<ActInputValue Guid="81f31584-f0da-4b5c-ad87-818552026a70" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="fe2fc5a9-7256-4ee7-8073-03eb39baff1c" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="f4440424-ce28-4d70-af3a-0f6849b75590" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[LocalizedControlType:dialog]" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="42bf731f-7f12-4fc7-9e64-49068e5389a6" Operator="Equals" Param="Dialog Title" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="New Variable String_2" />
+</ReturnValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Information OK button" Guid="06b53b0d-1479-40f9-9e5e-c45947b1fbf0" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="1c59057b-88bf-4972-8af3-92dc58b3e1ff" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="d33718b5-b10b-4756-b185-10513609d9e8" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="441325c6-4573-4179-bbb5-ca2fde09440e" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="1010307f-07e1-4875-952a-d9e434a4a488" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="OK" />
+</InputValues>
+</ActPBControl>
+<ActUIElement Description="UI Element Action. Switch_Copy" Guid="65140ebf-ec75-4e05-84b4-1e8013817c37" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3f98ddeb-cb4a-424c-a8a9-da02bc3ba94c" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="94bc8f6d-71ff-42a6-bfbd-a01a550f6263" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="eda8deb5-cc97-4d4a-82fe-7f7bf50fc18b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="651c7770-b8d1-4cf8-b2c2-d6aad84fe192" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Window" />
+<ActInputValue Guid="cad67d25-8e45-43f0-af9c-563bbe72d0de" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Switch" />
+<ActInputValue Guid="3efffff3-3c2c-4b30-9e7d-5bacc1d571b5" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="02c86b53-466e-4c0a-86a6-3a2fd1bc17f0" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Credit - Customer Service Management" />
+<ActInputValue Guid="5715bef7-1ec3-4df2-b5b7-1030daa0ec73" Param="SyncTime" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30" />
+<ActInputValue Guid="ce0089fe-7e12-4fab-b9b1-35c299cdf90f" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="0ce27032-a64c-4eb8-8bb5-0aee54e4a0ec" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="6d0a027a-bffa-4b01-9c8d-f5ebaceac3e0" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="81c66ce2-0294-4b4a-8dbe-73543a9fa169" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActMenuItem Active="True" Description="Expand Actions Menu Item" EnableRetryMechanism="True" Guid="fbf01f4e-dbad-4428-9378-f16e52a14bd1" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="20" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a9a2c3c4-b1ac-41a1-8715-a63ba5376766" Param="MenuAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Expand" />
+<ActInputValue Guid="62e31217-f61c-4ba6-9b47-b1be6a59a78c" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="70ffef13-3a93-49be-91e0-64a27533bb71" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="14e6c054-3c2b-41ca-87bf-4dc3b41f91ec" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Application/Actions" />
+</InputValues>
+</ActMenuItem>
+<ActSendKeys Active="True" Description="Send Keys Action" Guid="66a69c74-cd65-4099-8478-6d724a52b1e2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="AllAvailableWindows">
+<InputValues>
+<ActInputValue Guid="06728965-6895-4679-97aa-957dcb46909e" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="2164965d-2ab6-4c07-a5b5-7f2c7f6a22ed" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Credit - Customer Service Management" />
+<ActInputValue Guid="2e61bf57-42e3-4940-aa27-68e941ad4fe3" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="cf6bd67d-64aa-47b2-9ffe-93f94e87ab4e" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="bf9b85b7-37ad-4e14-b1cc-f163f14fca41" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{ENTER}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Set edit (10) Value" Guid="864136b2-1984-46b0-9fea-0196f0673aeb" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="IgnoreFail" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="5308c250-193a-46af-9e10-1abae1070d2c" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+<ActInputValue Guid="5f6f0543-08eb-49df-ad31-3297885b4483" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="40000001" />
+<ActInputValue Guid="cac9231b-e2bf-4414-82ab-1c0bc5c7b2a5" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByAutomationID" />
+<ActInputValue Guid="aed27a12-a3d5-4697-a9b4-bb0bd24cef11" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="10" />
+</InputValues>
+</ActPBControl>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy" Guid="987ff670-5bfe-46f8-81d3-6c3e5bf8986d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="AllAvailableWindows">
+<InputValues>
+<ActInputValue Guid="3268dc03-4d26-462a-b067-acb986daec2e" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="bd798f70-bf36-46c9-8737-94f9ef48ac74" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Credit - Customer Service Management" />
+<ActInputValue Guid="edd3e818-63d7-49b3-ae91-1c43a45991c6" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="06ac2bac-5646-4bfe-9391-7d7ca7a17f8b" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="10eac348-86b6-4938-92b7-875e443b17f7" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{UP}" />
+</InputValues>
+</ActSendKeys>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="New" DBValidationType="FreeSQL" Description="DataBase Action" Guid="eed88f7d-5f51-462e-8914-1bc3123738bf" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="15fa843b-ae9a-4b40-960b-853d0fe1ec00" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="select serial_number from (select serial_number from serial_item_inv where vo_id='40000001' and sim_status='V'   and duobill_ind is null  and twin_card_ind='N' and SIM_TYPE='097' order by sys_creation_date desc) where rownum=1" />
+<ActInputValue Guid="5fcdadbb-e487-4513-b2af-3dc7b59099de" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="48a709ec-c997-4bfe-bdc8-460dc60fb93c" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="6cd7d382-83f2-4bef-a9ab-979551ba3c3c" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="0a71a342-5133-4380-ac4a-4dc6bda7087b" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="95898bdd-cffb-4ec6-bf74-42834c891131" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="06707e8c-562f-4f55-accb-51b563ff90b5" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="eb734463-6ebb-411a-906d-522f5e3c948a" Operator="Equals" Param="SERIAL_NUMBER" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="New Variable String" />
+</ReturnValues>
+</ActDBValidation>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy_Copy" Guid="b0270b72-5e23-4fb4-9db5-0ab449f06fbe" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="AllAvailableWindows">
+<InputValues>
+<ActInputValue Guid="68cd7dd7-f21b-4b9d-923e-ba56f21e7730" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="73aded96-bb60-44d6-8f36-6eb176c5043c" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Credit - Customer Service Management" />
+<ActInputValue Guid="e511a2c1-5926-4b67-9348-db0221647eca" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="43619a95-6e3d-495d-922c-4ebe9920519a" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="8a4a1322-7e15-4e06-b373-842b5a6455f2" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{TAB}{Var Name=New Variable String}{TAB}" />
+</InputValues>
+</ActSendKeys>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy_Copy_Copy" Guid="d7840220-72ec-458a-ac97-1d953bcb584d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="AllAvailableWindows">
+<InputValues>
+<ActInputValue Guid="3ed5ef2e-410c-48de-91da-0f2e9d66b95b" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="83da7639-40ed-4e3a-9544-c698b8defb4a" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Credit - Customer Service Management" />
+<ActInputValue Guid="2b88d849-4782-48b1-9a9d-f6ec0f8a7d56" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="7550f783-ce46-49f2-a973-06125bcb0987" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="53c5f3e7-114f-4b17-a1b0-169c3e41f9f2" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{TAB}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Get Title title bar_Copy" Guid="f74fd96f-12d8-44a1-b3c1-e20c328c0820" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="1b906943-b955-4d25-aaaf-0c31283ce350" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Action_Executed" Value="773c08ae-8e60-4dc4-bc3a-8785f909eaf1#GUID_NAME#Information OK button_Copy" />
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="9ea2e119-27d5-4495-927c-727425a2da86" Operator="ActionFailed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Pending" Value="0241fdac-6d71-4e2a-ad5e-5a90e586fcf6#GUID_NAME#Service &amp; Features" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="ae7512c0-8dc3-4e53-835e-fb23e89f85a7" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GetTitle" />
+<ActInputValue Guid="6496834b-c0f7-4dcc-b84d-622af2aa40b7" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a6310eae-d211-4fb3-aac3-17426ccd69ba" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="22d4e998-c97d-4551-bcba-402e106e5487" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Information (#880255)" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="4bd915ca-47ab-4196-97a8-1240a38ca380" Operator="Equals" Param="Dialog Title" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="New Variable String_2" />
+</ReturnValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Information OK button_Copy" Guid="773c08ae-8e60-4dc4-bc3a-8785f909eaf1" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="e2ac31c4-a923-4e70-b6a8-c921d1e5dcb8" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="ea3e3a78-a564-42d4-b952-b847beee2a96" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="73fd6d2c-055e-4f86-abfd-9e7c19645001" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="508df29d-b9dd-42bf-b234-18ea192599f8" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="OK" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Service &amp; Features" Guid="0241fdac-6d71-4e2a-ad5e-5a90e586fcf6" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="76476203-f7ed-47a0-be12-aef41838ad9a" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SelectByIndex" />
+<ActInputValue Guid="cf2d461e-75e8-415e-99c0-9947f7be4b0b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="2" />
+<ActInputValue Guid="d73af276-3328-4f8f-8cff-e569d7e5fcdd" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="22f5f57d-1da5-4b18-a87c-0b8b0a1811c4" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="pane (1000)" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Power Builder Control Action_Copy" Guid="9ebf8c7c-74fc-45b0-92a7-dd343c93c95d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="8920164c-d504-42e8-8688-95c93e2aa706" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="DoubleClick" />
+<ActInputValue Guid="899fbce2-de3d-4d20-9fcc-73a0fb8ecf79" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="e72d8e7d-714b-45ea-a32e-65cf5a9149c3" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="tariff" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Click Button &amp;Filter" Guid="d6f94bf9-038f-4363-a1f0-9292bad974f9" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="dff2f8a2-9bb1-4f84-9f2c-7f5ab9e37e17" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="993b44c4-c14a-4862-b2c0-9914438717fc" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="4a2f0a40-89c7-4a08-9c0e-8f6789c87bc0" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="5cfc834a-c124-49c9-a768-1931f5b5fbeb" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="&amp;Filter" />
+</InputValues>
+</ActPBControl>
+<ActUIElement Active="True" Description="UIElement Action" Guid="a25febf2-c737-44d8-b1df-40c426362111" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="e52cdfd1-1591-43b8-bece-feb14c2cae17" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ComboBox" />
+<ActInputValue Guid="5efec656-1120-4586-95f7-cb0bbf86b024" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SendKeysAndValidate" />
+<ActInputValue Guid="eb095594-6cf8-498c-baab-c39d8049fa02" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="79da6caa-621f-4d46-8a3a-2ddf59103b3c" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="3b15e5f7-ce7a-42a4-bac8-aa2d2e2f731e" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="22d81475-c88f-43c6-a85b-a0960b031202" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Tariff Option List./Enter Filter Condition/[AutomationId:1006]/[AutomationId:11]" />
+<ActInputValue Guid="6350be81-85ad-4ff5-b703-6e713915b70d" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a4da967e-e0fe-4282-8fb2-1ecfcfb4c974" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Pp Code" />
+<ActInputValue Guid="c6816137-e09a-46f8-b8c9-b224cace4942" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="5eb18f1d-da73-4dbd-ba29-a3a991237d3c" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b316dfd8-1eb1-4f19-abe6-2695fdf29067" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="1c18bfea-f536-477a-9538-0df356c92879" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="b9c65079-eb4d-4a72-8063-6321d08abd67" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="349a280c-d300-4548-a7d8-b9669eb41958" Param="HandleElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="294dcb81-e3cf-439e-bd6c-310c6cc1e583" Param="HandleElementLocatorValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c4ede78e-2b5f-4447-8eaf-d8bef4651d53" Param="ValidationType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Exist" />
+<ActInputValue Guid="b7250383-6d53-43dc-9231-194827ae530a" Param="ValidationElement" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Button" />
+<ActInputValue Guid="161f1ccd-2bb4-4fa3-aff4-e0feabed4f9e" Param="ValidationElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="ad06d3e1-2cc7-4d2a-bc6c-89b2ab8e7bd3" Param="ValidationElementLocatorValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Tariff Option List./Enter Filter Condition/Filter" />
+<ActInputValue Guid="9222896c-90af-48fd-bf15-9b593c0c9273" Param="ValidationElementValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="d32f64b8-1d28-4491-a51c-87788ab61f91" Param="DefineHandleAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="51fd4001-2cc9-4e9b-9a7a-d6df6e58cf77" Param="SubElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Pane" />
+<ActInputValue Guid="ac6cc420-d5d3-46ba-942d-128c81e388e6" Param="SubElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="ea5a51c6-9408-4686-b9ba-deb0df09b536" Param="SubElementLocatorValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Tariff Option List./Enter Filter Condition/Filter" />
+</InputValues>
+</ActUIElement>
+<ActSendKeys Active="True" Description="Send Keys Action" Guid="11eb9195-bb13-4797-8fae-fa29f299baab" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a4d5d8b4-485b-4acb-aebc-b525a5884a89" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="3c62706b-a744-4345-b8e6-995eabd93ebd" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Credit - Customer Service Management" />
+<ActInputValue Guid="4304ea0a-04d6-4955-bf08-356697114886" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="4a4d06e4-2c67-4cfc-afce-390c7af00dc0" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="32d3ff21-1742-42d0-875c-aa3745696297" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{TAB}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Set edit (10) Value" Guid="428389e1-16a3-4825-8380-3f07e153b0d2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="0a5bae90-3601-4c45-84e2-a13e0c465d53" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SendKeys" />
+<ActInputValue Guid="1aa348fc-60b9-4193-8865-ef4a1d027513" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="BLACK19UL" />
+<ActInputValue Guid="87854e61-4e23-42b5-81fc-33138caf11e7" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="4686d7c7-2b67-4e16-a9c7-53d77b9ed3fc" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Tariff Option List./Enter Filter Condition/[AutomationId:1006]/[AutomationId:10]" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Click Button &amp;Filter" Guid="61737da6-d51e-4437-8da6-7478bfc064e5" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="0bf64e52-f23e-49e3-b47d-7e6a925aafdd" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="c1dd52bf-e5b4-4247-8b6d-cac45d0d0d3d" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="7e0cef7d-497a-41e9-8f06-0a6ea72c58af" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="1dfb2cc4-8ab6-494a-8aec-bc80cf2651d5" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Tariff Option List./Enter Filter Condition/Filter" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Click Button &amp;OK" Guid="2dd2b128-8c11-48cf-b9c6-2109c9a07f2c" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="8cb24a96-4520-4b45-bc8f-c34314bd3ed8" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="709fc454-487f-448d-9b88-6129a2b84b88" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="4da31d36-0483-4588-a666-b7b0491b8287" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="9e14409e-9a76-4f3f-9f05-bd120d08b112" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Tariff Option List./OK" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Click Button Common SOCs" Guid="ceda89cf-da06-4721-8858-200cc1333d43" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="100" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="4161a6ac-88e1-4c70-b20a-0ce95251aaa4" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="222f0b17-0972-4f3e-90b0-d659e441653c" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="fd951fbf-7a60-4d72-ba03-dac7363354fb" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="eb1431a2-02e0-49a2-80a7-3dd33fc83b8c" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Common SOCs" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Get Title title bar_Copy_Copy" Guid="66fb0018-7b2e-4763-b846-c2ae0994ad3b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="2d8babad-4a86-45a6-9d1c-776ae3774aed" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Pending" Value="773c08ae-8e60-4dc4-bc3a-8785f909eaf1#GUID_NAME#Information OK button_Copy" />
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="e181c66c-6e81-4658-83d0-5558691bb93b" Operator="ActionFailed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Pending" Value="ceda89cf-da06-4721-8858-200cc1333d43#GUID_NAME#Click Button Common SOCs" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="8d2e7d97-2655-4350-ac5f-b5b3d4b54365" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GetTitle" />
+<ActInputValue Guid="88891ae7-b185-4fae-ac7e-cb9b42e32687" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="86cd810a-f80c-4b0f-931b-9a8762fc6cfa" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="e0d74fd1-b8ab-491e-b380-9593a740169d" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Services List" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="7af93a3e-6afe-4755-aa8b-d875df3b0d1c" Operator="Equals" Param="Dialog Title" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="New Variable String_2" />
+</ReturnValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Get Title title bar_Copy_Copy_Copy" Guid="de5a11a5-a4ca-4c57-9f29-4cfabfd0c3fe" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="0869eef5-47d2-435e-a789-ce0e527d03d7" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Pending" Value="773c08ae-8e60-4dc4-bc3a-8785f909eaf1#GUID_NAME#Information OK button_Copy" />
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="e17bbc62-61ac-4a2e-98e8-5d055a45a287" Operator="ActionFailed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Pending" Value="ceda89cf-da06-4721-8858-200cc1333d43#GUID_NAME#Click Button Common SOCs" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="7ac4352f-b07f-43b0-9594-8ed1d09a305c" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GetTitle" />
+<ActInputValue Guid="5669bbbc-11c7-4ac4-98f2-41d48d082d59" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="bd610bbd-0770-4672-9eab-893301497a04" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="5f348279-ebba-46c1-8475-a2e5997332b2" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Tuxedo Error" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="af96db21-d668-4020-981e-e943e884f141" Operator="Equals" Param="Dialog Title" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="New Variable String_2" />
+</ReturnValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Information OK button_Copy_Copy" Guid="07d78955-1bdb-4e87-9df8-0a0fd2939774" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a80880a2-f5b4-466d-8584-9b6cc5202cc4" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="c25f5f81-51f9-4c2e-be69-776f6dc821ce" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="089c1797-a29a-4da2-92d8-8a2443e72c1e" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="11cc43bf-e328-422d-b3b1-ec0ee940f610" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="OK" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Click Button OK" Guid="fb726346-c401-4f3c-b952-1dcff4899c22" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="a9832d2c-04ef-4d93-8068-cd92aeb813de" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Pending" Value="ceda89cf-da06-4721-8858-200cc1333d43#GUID_NAME#Click Button Common SOCs" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="453f06a8-6907-45e2-ad77-26f4cfedbf22" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="6cd8535b-79fd-4aee-8908-a612bb31e7db" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="7239b898-2d9d-4629-98a5-19e8990efe7f" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="a3821522-0294-4ce8-a8f1-7ffdde96c668" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Information (#86648)/OK" />
+</InputValues>
+</ActPBControl>
+<ActMenuItem Active="True" Description="Expand Actions Menu Item" Guid="373cd646-ad19-4e01-9ab4-6f36632f09cd" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WaitVE="30" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="1d9c21e0-b3a2-4edc-a75b-18db74446ca9" Param="MenuAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Expand" />
+<ActInputValue Guid="fcab64dc-719a-4040-89a9-e4174e1962a7" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="5aa5df2a-a083-4f44-bac6-bbf1d9407c80" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="5edd9506-ba8e-4e5c-9939-2acecb904f12" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Actions" />
+</InputValues>
+</ActMenuItem>
+<ActSendKeys Active="True" Description="Send Keys Action" Guid="b17a0377-ed88-4030-8fa1-6baa05b2d25a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="18e40843-fc64-45df-8696-adae7692d4b4" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="79b93481-cec4-4976-aafd-735e96661daa" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Credit - Customer Service Management" />
+<ActInputValue Guid="227f2fe1-b08b-48f4-9c32-d1048a35f133" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="301e435c-a899-443c-ad1c-bab6ed88805f" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="63bbf1a0-80d2-47e2-ac47-3b39fdd8c148" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{TAB}{TAB}{TAB}{ENTER}" />
+</InputValues>
+</ActSendKeys>
+</Acts>
+
+<Variables>
+<VariableNumber Guid="979c3ec3-422b-4b6d-b647-347b35fd9bee" InitialNumberValue="0" MappedOutputType="None" MaxValue="2147483647" MinValue="-2147483648" Name="New Variable Number" ParentGuid="bb83726b-5725-41cf-a46c-4ef35c292e09" ParentName="Flow 1\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="d6e9ef87-63a7-485f-8cea-dc3774d8f5d3" InitialStringValue="Information (#880255)" MappedOutputType="None" Name="New Variable String_2" ParentGuid="bb83726b-5725-41cf-a46c-4ef35c292e09" ParentName="Flow 1\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="0fff068f-7e8f-4dd2-830b-76cbe949acda" InitialStringValue="04030423102090" MappedOutputType="None" Name="New Variable String" ParentGuid="bb83726b-5725-41cf-a46c-4ef35c292e09" ParentName="Flow 1\Group\Activity 1" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity></GingerRepositoryItem>

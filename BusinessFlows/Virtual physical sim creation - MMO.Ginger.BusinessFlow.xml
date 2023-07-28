@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="524429c1-5a8c-4876-9fb2-9bbe3034622b" ItemType="BusinessFlow" CreatedBy="Savvina.Rousou" Created="202307211053" GingerVersion="5.1.0.0" Version="5" LastUpdateBy="Savvina.Rousou" LastUpdate="202307211317" />
+<BusinessFlow Description="Create 045 cards" Guid="524429c1-5a8c-4876-9fb2-9bbe3034622b" Name="Virtual physical sim creation - MMO" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Inventory_control_Flow" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="d742c53f-d5e4-46be-bf76-0f4e5b1d8d03" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100,00%%" TargetApplication="MyPowerBuilderApp" Type="Regular">
+<Acts>
+<ActUIElement Active="True" Description="UIElement Action" Guid="fd894aa3-196f-4e75-9f7e-5370cfc7a179" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="db5a5b55-71b8-4642-bacf-96d6f4ba2517" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Window" />
+<ActInputValue Guid="c5a68c29-ee75-46f1-833d-df2d330a1d2f" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Switch" />
+<ActInputValue Guid="8d152f34-f8b9-4b4d-9862-669c9cc853d2" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="8d845229-3c7b-4892-a361-21252e35096a" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="48d5d0b2-af8b-4a59-904f-3321bd06c2f1" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="27992f11-4d96-4b4b-b356-43a6c6dc8446" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="301380ad-1fc8-49bc-a6a3-dd4ef9d25987" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="add17662-f25e-4701-91f3-024be9f615fe" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="14de7420-2b49-4466-b2db-4ee23997eed5" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="96af4eb4-4917-406a-8b25-a2fe4c0f019f" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="68dde6f3-f52c-4fa3-9bdb-799bd73bc133" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b4fc27a5-0ef0-4074-a398-8182f69d72d7" Param="SyncTime" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30" />
+<ActInputValue Guid="ae2b3595-a494-48a4-b012-c896a8578e14" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="67a43582-20fb-485a-aa12-800686b884ad" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActMenuItem Active="True" Description="Expand Topics Menu Item" Guid="4c926dc1-23bc-4f86-8dfb-5f1cf8d3cb54" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="6c06a724-90ef-4b49-898f-6802e65df419" Param="MenuAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="e3627511-16f8-4a39-841f-d85f207c718f" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="0f30f7e3-904e-4a73-ae3d-4f7b1120b59f" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="08bedba4-0118-432e-abcf-5ea66ecdaef0" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Topics" />
+</InputValues>
+</ActMenuItem>
+<ActSendKeys Active="True" Description="Send Keys Action" Guid="b2a4c730-4504-48e1-96e1-ad8356b6666b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="1cfff897-9a61-443d-a81f-0f5665cee19f" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="dd5c6121-1229-4869-80b3-b94b5c1690ea" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="f3556e3d-dc2d-48a2-bfa7-00ab2bc587ff" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="1d2584ff-502e-446f-b290-61f0e6c4f530" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="d840bffb-34d1-44d8-9214-8f7e149131c0" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{DOWN}{ENTER}" />
+</InputValues>
+</ActSendKeys>
+<ActUIElement Active="True" Description="UIElement Action" Guid="6372e840-50fa-474d-bde8-95afd4a9ac86" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="IgnoreFail" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="07f93762-ccf4-4e84-b1dd-714dfc58ed25" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ComboBox" />
+<ActInputValue Guid="28333e2e-69ba-4767-abc1-5803691146c6" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SendKeysAndValidate" />
+<ActInputValue Guid="84a88bfe-6fe5-46e8-80e4-3dd3f6dfc8d2" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="98ae1903-6752-4f50-b708-ff76f1fbfc90" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="0eda885a-99df-452b-82b1-60d203795903" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="f11c8dc3-c4bd-485e-8d5b-2b75a376818e" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Workspace/Purchase Order -New/[AutomationId:1000]/[AutomationId:12]" />
+<ActInputValue Guid="6efc8967-b546-46a8-824a-652d35598e18" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="53fd7ef3-aa6e-4532-946c-5ae9fa2c6cf3" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="00001481" />
+<ActInputValue Guid="6e6222d5-a025-475e-814a-d062fd3e5e37" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a4df2d60-3db5-4189-86c7-2ddd137da1ac" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="e4e20832-494a-4ddc-abe9-b22f943f12f9" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="cba44887-86d1-4621-8ac2-17344443c64d" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="db1b9cc5-2b75-4baf-999c-a14bf40a6b1e" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="42e0ee65-e456-49f8-8f9e-7e4561e770e0" Param="HandleElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="75c4b9f1-f79e-4de4-bac2-8883cdf67eb5" Param="HandleElementLocatorValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ab5547fa-4593-4dc9-b0cd-1592e7dc73d9" Param="ValidationType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IsEnabled" />
+<ActInputValue Guid="3e9f5bde-77c7-4864-9db7-8e7ebe5a3bea" Param="ValidationElement" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="53bcfcd5-d1c6-4a11-bd44-4eaff76b366c" Param="ValidationElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="fee18264-2590-4e4b-b0b1-9b89b07b4564" Param="ValidationElementLocatorValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Workspace/Purchase Order -New/[AutomationId:1000]/vo_id" />
+<ActInputValue Guid="ed813434-73c1-4335-ac24-9cf694ef0d35" Param="ValidationElementValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="4e110860-e98f-4b3f-8296-1aaad8e84c33" Param="DefineHandleAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="d1141602-8d5b-4027-aa3e-26a460333642" Param="SubElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="dd0fa029-13e3-4a71-974a-cf237cf2ed0d" Param="SubElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="743ece3f-f66f-4b76-a59a-87655784f35f" Param="SubElementLocatorValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActUIElement>
+<ActPBControl Active="True" Description="Set vo_id Value" Guid="5ee1a005-a3ea-4acf-a4ac-9c7b5eef6986" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="22888c3f-32d4-4e40-a394-f98575b411b5" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+<ActInputValue Guid="02ac2c25-4662-494e-8022-773dcbc5bc1d" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="40000001" />
+<ActInputValue Guid="f3e2a467-ad6f-4311-9912-e2311b339ed3" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="331ee1ff-1c7b-4bbb-bf2f-3cb69f2b2ab9" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Workspace/Purchase Order -New/[AutomationId:1000]/vo_id" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Set edit (23) Value" Guid="c75c5bf6-e38a-46c7-a739-54ae786b61d9" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="e8b9b339-b5fb-4dd7-a9d4-8fd0d0137531" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SendKeys" />
+<ActInputValue Guid="4ff9ce89-92a4-4fbc-99ec-f269296bf2e8" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FIH" />
+<ActInputValue Guid="7b862feb-0108-417a-986c-9c1cdba989ce" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="1d676cc5-6ff8-4ae1-a539-f6e9f0c4f6ca" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="edit (23)" />
+</InputValues>
+</ActPBControl>
+<ActMenuItem Active="True" Description="Expand Line Menu Item" Guid="2cd75043-6752-4cb4-bab2-8fbdc04a7de6" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="5609252f-0c4c-4de7-9052-c2001eb96a3a" Param="MenuAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="5153b4d8-c321-4ad4-8e5e-08af343d15be" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="492607e1-4bca-4ce9-99bc-02821f956cc0" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="c0e8fefa-88b5-49af-bfae-638d8df15d12" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Line" />
+</InputValues>
+</ActMenuItem>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy" Guid="446b3a31-2a92-4a05-a9a0-c1942321bb67" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="8ce5a2cc-69bf-4906-90b2-55cb86c79b8b" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="528f7a91-68ae-4062-bc7d-0502a2547baf" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="f5ac8990-960b-46eb-9810-2bf938dff71d" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="446f0d61-123e-4362-b8bf-3426488615f0" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="a415ea66-3e57-4ce6-ad41-637f31ea0959" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{DOWN}{ENTER}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Set edit (10) Value" Guid="8726cb3d-9269-464e-9418-e7e509627d48" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="64273f20-f2c4-4f0a-ac21-18fe684bf443" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+<ActInputValue Guid="6882d32b-a1c1-4fda-8028-e6f367de8aa3" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="200" />
+<ActInputValue Guid="1b499bce-410a-4d28-8ec0-c9a9e42651c3" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="68bb000d-9a38-42ed-965c-406191bcff99" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Workspace/Purchase Order -New/[AutomationId:1004]/[AutomationId:10]" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Set edit (11) Value" Guid="52efdb83-d749-4012-b8de-70bc590acda2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="08e92f71-e20a-4637-b839-7b3f5f76315b" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SendKeys" />
+<ActInputValue Guid="85aa0013-9ef2-4a57-94cc-1888382d0788" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="&#xD;&#xA;54503000" />
+<ActInputValue Guid="9fa0c749-c2c5-4a16-b69f-dc7684fbc931" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="af9eb159-780d-4c15-acad-0bdc5f7ae62d" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Workspace/Purchase Order -New/[AutomationId:1004]/[AutomationId:11]" />
+</InputValues>
+</ActPBControl>
+<ActSendKeys Active="True" Description="Send Keys Action" Guid="40875279-f30b-406e-90fa-2fad63b32364" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="91b220e3-9d0b-45d5-b5e6-bf78e6e84e2c" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="7c9c995b-33b7-4112-9461-5bbb03c78725" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="964371ad-2cbf-4acc-822c-03b5879d9f58" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="dc719db4-114f-43f6-b333-375ac08ac3f7" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="0cbf9659-6f8e-4263-82c9-dc384e136132" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{TAB}" />
+</InputValues>
+</ActSendKeys>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy2" Guid="b297cb52-4ee3-4e8a-ad91-183ffaf7c86f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="e0712d43-6132-4738-989c-54953148f87b" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="60bb642f-350b-4ff5-b6fe-672a0cfa94c7" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="fff08b22-e873-41d0-bf6a-85148b5ee75c" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a89ac9a1-5dc1-4a19-8148-2c6155741608" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="ec0c1e9c-6c51-49a4-8952-06991386601b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{TAB}{TAB}{TAB}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Set logo_id Value" Guid="e9690727-e81e-4310-bc47-98704e781fe3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="af62585d-c8b3-4ab3-acb4-e41a8f671520" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="c4d32260-478d-4a01-a752-042fa03afff9" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="2bbc2ef6-a020-4fa5-a15e-3552617dde5f" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="da930dec-dade-40ae-bacc-62d3c9fa878c" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="logo_id" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Set logo_id Value_Copy" Guid="73626b05-06d3-45b3-8d40-ad10bf7ca80e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="b8e7edd6-277b-4c88-ba7e-76bcb8effa00" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="DoubleClick" />
+<ActInputValue Guid="76cc74a3-e75e-4a6c-ad85-7ae2d3581a82" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="dc63462b-ec17-4556-a2e9-b412cde8976a" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="85d3dcfd-99ad-4f88-be2f-e2610ad542e2" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="logo_id" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Set logo_id Value_Copy_Copy" Guid="20027a04-3077-4faf-9f2b-23a2bbf4c8a1" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="9d127e7c-2d48-454c-8a66-6316f2ccaf31" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="DoubleClick" />
+<ActInputValue Guid="c915bb7a-9702-4843-9990-618291945cd1" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="1c123d8e-3d31-4346-bc8b-71fa0f491bc4" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="2f4a0422-cafa-46ed-8f88-d361e2ef73d1" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="logo_id" />
+</InputValues>
+</ActPBControl>
+<ActMenuItem Active="True" Description="Expand Actions Menu Item" Guid="4629a75a-2601-47b7-adb6-3e5b5586703c" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="2f4f8561-e832-4e41-a862-e1aa8ef9a7b3" Param="MenuAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="68899fd1-3156-4d2e-a0a8-0f40cdd6b826" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a447a7f8-2608-4f9d-bf96-145288b6d6c0" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="a617a9c3-b815-412e-be15-ee2190c9ed2a" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Actions" />
+</InputValues>
+</ActMenuItem>
+<ActSendKeys Active="True" Description="Send Keys Action" Guid="801c8e40-7c78-4fd2-827c-fdb450147104" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a759c7e7-8820-48b2-87aa-91a96af2a8e8" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="8474045f-af5a-4702-a905-de2c362e9724" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="cbcf8a87-7236-4666-8812-7afb120b61f2" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="f6c71d9e-4853-451e-bb17-27ded4c160a7" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="84e3dd4c-3e54-4cda-bc14-5dfc1494c0c2" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{DOWN}{ENTER}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Click Button OK" Guid="57cfcc3b-268b-47fb-8392-41c10a0b6c16" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a4b3f18c-e498-4cb2-85b5-1609b27012d2" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="07557c61-ca25-4666-8703-070d04505ee2" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="8bf72328-b43a-41b1-876a-65ff4d976e05" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="2e0570ef-7e8c-4f63-8927-3d089e38e893" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/Post Transaction (#25075)/OK" />
+</InputValues>
+</ActPBControl>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="ACAPP116" DBValidationType="FreeSQL" Description="DataBase Action" Guid="d4b9ef33-e9a8-4a73-8c89-00fef5242b0b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="20" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a86495bf-1c58-4c80-8bc3-934d3848ccc3" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="select PURO_OID from (select PURO_OID from inv_purchase_ordln order by sys_creation_date desc) where rownum=1" />
+<ActInputValue Guid="90cde858-bbc5-4931-a057-4b5d2f5cd5c7" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="0eba1e0c-3b67-43ab-aaea-a2d015a7d660" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="d326cedd-9da2-434d-855b-ee17f9b6fb3e" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="36fe5472-7540-4f96-9fe5-776064ec791a" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="0ca23131-ef18-4cf6-8c85-4d73fd698174" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="2bb4a73b-a708-4014-a73e-857aab7c53b1" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="284fce53-bd2c-4cb1-94b6-6fcb2f5463f4" Operator="Equals" Param="PURO_OID" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="PO_ID" />
+</ReturnValues>
+</ActDBValidation>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="ACOPR117" DBValidationType="FreeSQL" Description="DataBase Action" Guid="86d19ef2-8d4b-42e1-a7af-79190972f011" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="9a1e13eb-80e3-46f6-ae4b-6cecf8f099cb" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="update rmsppcxcr set MANUFACTURER_ID='00001481',MANF_LOC_ID='40000001', MANF_OID='{Var Name=PO_ID}' where JOB_REC='RMSPPCXCR'" />
+<ActInputValue Guid="4ca29bb7-6986-4d8d-8499-094f8d2abda7" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="af304ec6-cb59-4421-8f4a-89f9acf95f80" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="f17806c3-458b-4322-bce7-8b5496b4b73f" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="03cbce2a-4423-437c-94e7-62fb2f8f4dfc" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="e82683ae-01db-429b-857c-401797c397ef" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="e7e0ffc0-e839-49f8-82d5-57662776807b" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDBValidation>
+</Acts>
+
+<Variables>
+<VariableString Guid="e149d95e-a407-4844-86ce-72d9b32041ea" InitialStringValue="11" MappedOutputType="None" Name="PO_ID" ParentGuid="d742c53f-d5e4-46be-bf76-0f4e5b1d8d03" ParentName="Virtual physical sim creation - MMO\Group\Inventory_control_Flow" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="First_Job" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="adfbfbf0-b2f8-4d53-bc04-36fe9d5621e3" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100,00%%" TargetApplication="vdwrk727" Type="Regular">
+<Acts>
+<ActAgentManipulation Active="True" Description="Agent Manipulation Action" Guid="dcaf0c27-2650-4ec1-92cd-fa0ef4829dbb" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="03189ae4-85a7-4234-a418-bb20b0d8674f" Param="AgentManipulationActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="StartAgent" />
+</InputValues>
+</ActAgentManipulation>
+<ActConsoleCommand Active="True" Command="runjobs RMSPPCXCR RMSPPCXCR" ConsoleCommand="FreeCommand" Description="1st_job" Guid="aebfb959-bc2c-4292-a7b5-e6c666b246f8" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="578fb309-7431-4551-806d-e5ed09deac23" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="runjobs RMSPPCXCR RMSPPCXCR " />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Golog" Guid="5b263a4d-6543-40d3-9d65-1d4fc96d1e97" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="af039ed4-d190-4e56-a7e7-8d56f4234198" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="golog" />
+</InputValues>
+</ActConsoleCommand>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="ls -ltr" Guid="a89915fc-3a57-4eeb-bf2e-c1ffcb84f90e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="5962f3df-f9b5-4bed-9eb1-f36fd7d1218e" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ls -1 RMSPPCXCR* | tail -n 1" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="01a273c9-c7c9-4f50-99fd-297c5a57c49e" Operator="Equals" Param="Result" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="Log_Details" />
+</ReturnValues>
+</ActConsoleCommand>
+<ActSetVariableValue Active="True" Description="Set Variable Action" Guid="fc254901-5f64-4357-8e6c-f1605e7b8165" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="528b6043-c6a6-4f41-9bb5-31d156587824" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp=@&quot;{Var Name=Log_Details}&quot;.Substring(32,43)}" />
+<ActInputValue Guid="ec50b577-9ab7-4e44-bd4e-5c1694cc4ae9" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Log_name" />
+<ActInputValue Guid="b976012d-1126-4d42-b3b8-902ad7abae8e" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+</InputValues>
+</ActSetVariableValue>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Fetch PPC file path" EnableRetryMechanism="True" Guid="373cf4ab-9b64-49fc-bb0b-3a21ea5b853c" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="270317a6-ae2f-4969-89ac-f7613c3244d1" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="cat {Var Name=Log_name}| grep 'The path of the PPC' | xargs echo c=" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="9b19b005-efd4-4c21-b464-fb5f98ff32b7" mExpected=" The path of " Operator="Contains" Param="c" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="PPC_FILE_PATH" />
+</ReturnValues>
+</ActConsoleCommand>
+<ActSetVariableValue Active="True" Description="Set Variable Action" Guid="ea3335c8-0621-4f5d-b66d-3463e44c230e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="47f88483-c57e-4687-ac07-36cfb2243ab4" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp=@&quot;{Var Name=PPC_FILE_PATH}&quot;.Substring(31)}" />
+<ActInputValue Guid="fb30dab0-21ec-45b7-bfa7-5a9bbeceab53" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Final_PPC_File_path" />
+<ActInputValue Guid="480a909e-fbad-4018-8b48-2e9a84e162b8" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+</InputValues>
+</ActSetVariableValue>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Fetch PPC file name" Guid="1b32968b-a2f8-4701-a167-654e02eb397f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="4b1fd9b5-f8d3-451f-9924-12d3877844d7" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="cat {Var Name=Log_name}| grep 'The name of the' | xargs echo c=" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="fb5b90b5-73e8-44d5-86d3-7516037ec8f0" mExpected="The name" Operator="Contains" Param="c" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="PPC_Fle_name" />
+</ReturnValues>
+</ActConsoleCommand>
+<ActSetVariableValue Active="True" Description="Set Variable Action_Copy" Guid="b9ba7076-d39f-4cbc-9a64-ddac7987248f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="b629d702-e52c-4ed7-a4b8-69a5466b3e4e" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp=@&quot;{Var Name=PPC_Fle_name}&quot;.Substring(104)}" />
+<ActInputValue Guid="8c945189-284c-40ff-b584-0c8a25c929a3" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Final_PPC_File_name" />
+<ActInputValue Guid="96ce91ab-1f77-48ec-b50f-2111cc01b8ad" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="PPC_Input_File" Guid="0d094d52-843b-46c2-8635-f2657572acac" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="77a5d2c8-561a-44f8-81ff-78c13d3e51a7" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp=@&quot;{Var Name=Final_PPC_File_name}&quot;.Replace(@&quot;output&quot;,@&quot;input&quot;)}" />
+<ActInputValue Guid="5139cbfc-f3dc-4297-ae1d-fd02b78c5bb2" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Input_PPC_File" />
+<ActInputValue Guid="9e962aa4-3dfb-4c40-9f1a-779db287254e" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+</InputValues>
+</ActSetVariableValue>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Go To PPC File path" Guid="7c88040a-6c63-4426-8713-4ecfec944d7b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="9f0b2099-02c9-4a87-94b8-8de7448e8d0b" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="cd {Var Name=Final_PPC_File_path}" />
+</InputValues>
+</ActConsoleCommand>
+<ActSetVariableValue Active="True" Description="Set Variable Action" Guid="1c2ab473-b99b-4830-aa8b-9f8ef2286d5e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="35a6bcbd-4bb1-4f7e-8626-e203f407efd8" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp=DateTime.Now.ToString(@&quot;yy&quot;)}{CS Exp=DateTime.Now.ToString(@&quot;dd&quot;)}{CS Exp=DateTime.Now.ToString(@&quot;MM&quot;)}" />
+<ActInputValue Guid="fe6cba88-8474-44c1-b55c-0df7e7d1c14a" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Simulator_date" />
+<ActInputValue Guid="fa0496f5-62bc-4032-890a-9a65cd98f8cd" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+</InputValues>
+</ActSetVariableValue>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Run_Simulator" Guid="31bde5a5-6a3d-438f-a6b4-d9f935a5485a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="86c46ba7-8f01-4547-96c8-472e7fc54252" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="actasppcx 03:04:{Var Name=Simulator_date}0 {Var Name=Final_PPC_File_name} {Var Name=Input_PPC_File}" />
+</InputValues>
+</ActConsoleCommand>
+</Acts>
+
+<Variables>
+<VariableString Guid="ae86f4fa-7919-490c-848e-1b8c8cf0274d" InitialStringValue="RMSPPCXCR_RMSPPCXCR_PUC_20230602_132626.log" MappedOutputType="None" Name="Log_Details" ParentGuid="adfbfbf0-b2f8-4d53-bc04-36fe9d5621e3" ParentName="Virtual physical sim creation - MMO\Group\First_Job" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="6c1f003d-f0e8-42fc-90eb-f0c9b13b8764" InitialStringValue=" rms.RMSPPCXCR20_reg.20230710_053057.output" LinkedVariableName="FINAL_PPC_OUTPUT" MappedOutputType="None" Name="Final_PPC_File_name" ParentGuid="adfbfbf0-b2f8-4d53-bc04-36fe9d5621e3" ParentName="Virtual physical sim creation - MMO\Group\First_Job" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="08767b09-9d22-476f-bd77-858898c34c4c" InitialStringValue="c= The path of the PPC file is : /users/vdwrk727/var/puc/projs/rms/interfaces/output/Jul/10/" MappedOutputType="None" Name="PPC_FILE_PATH" ParentGuid="adfbfbf0-b2f8-4d53-bc04-36fe9d5621e3" ParentName="Virtual physical sim creation - MMO\Group\First_Job" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="8eb9bb79-94b1-4390-ad30-9519f72a0727" InitialStringValue="c= The name of the PPC file is : rms.RMSPPCXCR20_reg.20230710_053057.output The name of the PPC file is : rms.RMSPPCXCR20_reg.20230710_053057.output" MappedOutputType="None" Name="PPC_Fle_name" ParentGuid="adfbfbf0-b2f8-4d53-bc04-36fe9d5621e3" ParentName="Virtual physical sim creation - MMO\Group\First_Job" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="8cdf06cc-1df6-40be-8953-22378451a605" InitialStringValue="rms.RMSPPCXCR20_reg.20230710_053057.input" LinkedVariableName="FINAL_INPUT_FILE" MappedOutputType="None" Name="Input_PPC_File" ParentGuid="adfbfbf0-b2f8-4d53-bc04-36fe9d5621e3" ParentName="Virtual physical sim creation - MMO\Group\First_Job" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="3cc4a9b4-f828-4d16-ba5b-096ad1437b10" InitialStringValue=" RMSPPCXCR_RMSPPCXCR_PUC_20230602_132626.log" MappedOutputType="None" Name="Log_name" ParentGuid="adfbfbf0-b2f8-4d53-bc04-36fe9d5621e3" ParentName="Virtual physical sim creation - MMO\Group\First_Job" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableNumber Guid="8c49857f-3341-4150-beab-2a2a735097f6" InitialNumberValue="0" MappedOutputType="None" MaxValue="2147483647" MinValue="-2147483648" Name="Simulator_date" ParentGuid="adfbfbf0-b2f8-4d53-bc04-36fe9d5621e3" ParentName="Virtual physical sim creation - MMO\Group\First_Job" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="DB_Update_for_2nd_job" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="e73ec7a2-ac64-4750-944b-b721552260c8" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100,00%%" TargetApplication="MyPowerBuilderApp" Type="Regular">
+<Acts>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="ACAPP115" DBValidationType="UpdateDB" Description="DataBase Action" Guid="7462fbf7-f4c2-48ce-a6db-3d3cf64aa181" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="1f628c8d-771c-43e3-b09b-5650851c4c40" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="update ac_processing_accounting set FILE_NAME='{Var Name=FINAL_INPUT_FILE}' , FILE_PATH='{Var Name=Final_PPC_File_path}' ,FILE_STATUS='RD' where identifier = '112' and file_name like '%RMS%' " />
+<ActInputValue Guid="4d807a50-b9ca-4b3d-bd16-1a567894c6c6" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="2a620638-92ee-4151-a70b-b022ff162ee9" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a2f7ffb9-2a42-4596-adf7-4da8a623e898" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="1de289cb-a54d-4516-9c44-6595074cb86f" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a3ed199e-6e49-4f19-83df-d31c9ba15c62" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="15340adf-53df-48c5-ae6a-67230b8f86c3" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDBValidation>
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Second_Job" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="f3bead25-4ebe-4bd4-8d3b-64c614aaa61e" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100,00%%" TargetApplication="vdwrk725" Type="Regular">
+<Acts>
+<ActAgentManipulation Active="True" Description="Agent Manipulation Action" Guid="7119c6f3-f1b1-490c-96f9-dbab204a89ba" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="beffe324-d84a-4ec9-990a-6ce68a11e812" Param="AgentManipulationActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="StartAgent" />
+</InputValues>
+</ActAgentManipulation>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Run 2nd Job" Guid="b6db1035-6810-4641-a973-12be8d321382" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WaitVE="30" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="c1507627-011b-4f01-9c69-9db541fe7057" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="runjobs RMSPPCXRC RMSPPCXRC" />
+</InputValues>
+</ActConsoleCommand>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="ACAPP116" DBValidationType="FreeSQL" Description="DataBase Action" EnableRetryMechanism="True" Guid="1fc4b1c1-d2a9-4932-8581-751af66408cc" MaxNumberOfRetries="3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="2fc93b1f-98ea-4151-928b-b48dc451d83d" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="select FILE_STATUS from ac_processing_accounting where identifier = '112'" />
+<ActInputValue Guid="08f55816-9148-4f00-ba93-a219c3893494" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="0e0a7347-979c-434e-990d-437e0e9a2c72" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="3026a4f7-ae1c-481e-aed5-76a239e6899d" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="57e78dc3-3014-4351-a48f-8b4969fec9d1" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="1d431db2-ac5b-4ce9-84ba-06e68a5709e5" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="91c36a67-19b3-4a5c-af82-52e6ce2cf2f0" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="6dc141eb-7a2d-47c2-ac54-038f3d0e51c7" mExpected="CO" Operator="Equals" Param="FILE_STATUS" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" />
+</ReturnValues>
+</ActDBValidation>
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Receipt" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="f29c1a51-06e8-4584-8efc-7b45e1d9b45b" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100,00%%" TargetApplication="MyPowerBuilderApp" Type="Regular">
+<Acts>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="ACAPP116" DBValidationType="FreeSQL" Description="DataBase -  FIND the status of cards_Copy" EnableRetryMechanism="True" Guid="327a3257-c9c9-419b-99eb-2b1c0504ce72" MaxNumberOfRetries="3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="f2483277-2529-4dda-8df4-de7bc3b2ac10" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="select serial_number from (select serial_number from serial_item_inv where trunc(sys_creation_date) = trunc(sysdate) order by imsi) where rownum=1" />
+<ActInputValue Guid="faf3f9ef-7a39-4ab5-b7ed-41608f3aeafc" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="c288552b-30a7-41d5-8e7e-7870fd67365b" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="f028d572-693e-44ef-b387-dfdfe542a4c6" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="50422335-8ff7-4e8b-af5a-5fbe68f843b7" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ecf4b459-50f2-4ef4-b4b3-11a01b05d88e" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="54b49397-04b4-475f-914b-11b818c16e7d" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="f4601a47-c131-4f6a-9e17-6cbf83caae92" Operator="Equals" Param="SERIAL_NUMBER" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="GlobalVariable" StoreToValue="620f0528-3b3a-4530-a42c-dfe578f883e2" />
+</ReturnValues>
+</ActDBValidation>
+<ActUIElement Active="True" Description="UIElement Action" Guid="9cf52b1e-b40c-4305-aced-9a5bd7ef36ff" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="8b6edccf-96ac-4a77-ae60-0b1111091778" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Window" />
+<ActInputValue Guid="6b193bdf-bd5b-459b-8440-967d21c6472b" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Switch" />
+<ActInputValue Guid="f41d3557-35a5-47a9-9c01-660f4d6756a3" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="faf604bb-a427-47b8-8bbe-4b3c7176f36c" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="4f06ef96-6122-4091-b745-267dbc90a431" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="a9211131-5b97-46e1-bed0-81a1294d733c" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="f4749f6f-3460-4fb9-8c9f-ee17bb844afa" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="e004a321-9f5d-4ddf-a739-0892f87062bc" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="233923d9-1021-41dd-94c0-e0a0731da1b0" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="0ba1189a-d1dd-469d-9929-6e0414844029" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ee8c2cf6-e73a-43bd-a7b5-61bc30bc051e" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="648424c1-6dfe-4951-a280-193efecf735d" Param="SyncTime" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30" />
+<ActInputValue Guid="7dfd5d9a-5f35-4363-bad4-b8d63dbe0e2d" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="7148787c-5f7e-404c-a9c6-ba1c49e01293" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActMenuItem Active="True" Description="Expand Topics Menu Item" Guid="69bdf912-f8d2-444d-9f1f-48397dcdf0d6" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a83839fe-7860-47c1-8f2a-6c7249914d99" Param="MenuAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="8cb11b63-0ad9-4815-bb9a-589a1b9899d1" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="5cf5275d-d5a8-4952-82c5-710a56ef3686" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="9d531253-7c17-4295-bba3-e9ac9b716e40" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Topics" />
+</InputValues>
+</ActMenuItem>
+<ActSendKeys Active="True" Description="Send Keys Action" Guid="8ac6ab8e-cf40-4d97-ac91-11b90ff4edf4" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="8138b4a1-aca3-46b3-a736-e51d25942275" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="212f4fa3-544e-4207-bf4e-3faeaf4406e3" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="08d64d46-83ff-4442-86cc-f158f60fcaf8" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="37c01a68-1341-49e9-a770-33ec598d6bfd" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="383104e7-37f8-47ff-b6ce-08283dc7f62f" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{DOWN}{DOWN}{ENTER}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Set                   Value" Guid="3873b294-3764-449c-a0e9-51b0beab915d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="1355cab7-8573-4f2f-815e-785cd0c21a43" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="DoubleClick" />
+<ActInputValue Guid="e0e5f06c-8234-4513-a02b-7f1cc0c458d8" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a1c61da6-6c0a-4578-b2ec-d03709fb7e39" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="1a9bdeb3-2706-4d9c-8e31-b5a371b5b3e0" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="                 " />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Click Button &amp;Get" Guid="2aa68345-3b50-4e97-9902-acc525eed36e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="05c956e3-fd10-4bcf-9d83-fd46fa6eb7dc" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="3f27a658-49cb-4f40-9b77-0ffd592291e3" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="6d1d0627-4915-4c09-b4c0-81b333361b85" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="d44fbe5a-c5d4-4111-a770-ab0a3d8a4256" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="&amp;Get" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Click Button &amp;Filter" Guid="e6f0fa92-121c-4b71-b1a8-9f0a84d9abff" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="bc310a40-3be2-4b7d-b08f-6d3c3badf4ba" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="ef468f26-8f82-4054-bfe1-d22d369eaf4e" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="dea0df47-9aaa-455e-9b06-aabe0599765a" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="41dba12f-4c59-4873-b4d9-1ace3b82d3be" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="&amp;Filter" />
+</InputValues>
+</ActPBControl>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy" Guid="771ec7a8-9f33-4728-9ff9-37924806ccbb" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d536a975-56c2-4335-a80a-04390ced567b" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="c75006d2-4dbf-4bb2-b599-ada2e46dab9a" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="ae714e12-8208-48ae-bff9-4536253f568d" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="0540dd67-278f-42bd-b2fc-8b7c4438ec24" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="2047e956-460c-48ba-95c8-d9f41ed828ad" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}" />
+</InputValues>
+</ActSendKeys>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy_Copy" Guid="0e9686e3-0ad2-434e-bfd0-1b88221f7f67" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="f42b9d4c-cc74-4394-8d3f-09b589b1ae60" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="441c0273-28da-4403-a180-4c4084425c3a" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="ebe35fc6-be72-48a3-92e0-c89393fc1a34" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="bad4198c-1543-477d-b17f-e1e89597f409" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="c82a1e34-2e3c-4c9d-ba3c-5970b450b6aa" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{TAB}{TAB}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Set edit (10) Value" Guid="87f4fa42-067c-4e53-a166-5e128e3c1d8b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="aeebe00f-ec78-4045-8310-d84989e8adcd" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SendKeys" />
+<ActInputValue Guid="0a8d37e2-184b-44d5-9c18-eef8d4bba229" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=FINAL_PPC_OUTPUT}" />
+<ActInputValue Guid="66f652fa-df6c-4c94-a58f-ab50fa663f46" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="6f18f01f-b6d0-42d7-b90d-156afe61c6ef" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="edit (10)" />
+</InputValues>
+</ActPBControl>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy_Copy_Copy" Guid="1a518d9a-2dc7-4371-859f-eb1af76b1bf3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d579bbfe-243d-4c8f-9875-7e38a55f7db6" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="0a5ce24a-3201-4756-9fd0-5d1b0e9d4f71" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="96910faa-66b9-4447-922d-9730213f4456" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="9b78c87b-173f-4976-a928-fc0391ed0850" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="639653c3-9c08-4a98-a17c-7ce537a99357" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{ENTER}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Click Button &amp;OK" Guid="181bb85d-5a59-46b9-a94a-2cd2d06a15c5" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="2ebdbc42-9e36-4956-8847-d8fa6de0a695" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="b8b2634e-2e04-4790-b0d6-335c30fe9186" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="e7f229c2-52d2-4b28-ba7d-884c563fd12b" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="67e88991-eb79-43ce-9195-27b7cbab42cf" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="&amp;OK" />
+</InputValues>
+</ActPBControl>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy_Copy_Copy_Copy" Guid="0c4234de-e0ac-4cfc-ae7c-0c84eac87199" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="5397d128-6bf1-4d2e-ba91-5118edba7844" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="f69da1cd-dd96-42c8-910b-c9c60067a503" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="30fd9a60-3c01-49a5-9d34-17c41f8837b7" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="4c34ba16-118c-4b03-9c5f-037d01956682" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="15ff9f7e-d3e9-42f9-b720-d422337178cd" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{TAB}{DOWN}" />
+</InputValues>
+</ActSendKeys>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy_Copy_Copy_Copy_Copy" Guid="73cf4014-c1d0-4e0a-9e19-b0980fec80c8" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d66e62fe-28db-4f5e-b4f4-c61b1a6e8a2f" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="2a11fb2f-bd59-4c39-8e95-a4474789f950" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="a2707da5-0d5e-46c8-a0b3-d9f927dacbf0" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="b8224b08-4164-438b-a0a2-ee74de9d174c" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="92ec161c-97f8-478e-bbf1-64b844fd87f1" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{TAB}{TAB}" />
+</InputValues>
+</ActSendKeys>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy_Copy_Copy_Copy_Copy_Copy" Guid="09e5179f-7539-4e5d-9c50-eaffb1441561" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3bc60459-5317-4097-b7bc-24570bcda736" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="0f14c163-ebea-4b29-a70c-f560124ead1f" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="66dc435e-96e1-4b88-9dcc-9572d1cc5f9b" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="d8d36f8c-78bd-4c1f-95da-672467b67252" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="cc611d0e-678c-4aab-ab72-14eabc918db6" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{DELETE}{RIGHT}" />
+</InputValues>
+</ActSendKeys>
+<ActPBControl Active="True" Description="Set edit (11) Value" Guid="dc3836ac-4611-4a82-9867-d07cafbcc7c2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3c7cdc88-8aaa-4777-aaec-025005198d10" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+<ActInputValue Guid="a2c80f68-d47c-4e65-b193-10922f183832" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="200" />
+<ActInputValue Guid="e00b6d07-8018-418a-ab16-6f15946e5784" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="876fd242-0e01-47a4-9f96-3c5593da986d" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="edit (11)" />
+</InputValues>
+</ActPBControl>
+<ActPBControl Active="True" Description="Set edit (11) Value_Copy" Guid="e943f6de-0b0b-4077-9da8-6ffec5251310" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="03de3f19-6cc3-4efc-90a7-789da2bfb8e0" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SendKeys" />
+<ActInputValue Guid="7ee11621-2f34-482e-b15d-f2f0258a43e2" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=FIRST_SIM}" />
+<ActInputValue Guid="bb6ecd54-0d5d-439d-9b0c-828774c5e3ce" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="6a84f250-bd9e-4057-84a9-2511954a9b90" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="edit (14)" />
+</InputValues>
+</ActPBControl>
+<ActMenuItem Active="True" Description="Expand Actions Menu Item" Guid="2dd2e5dd-cbc1-45de-8496-ca014f6a507b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3e1bdd88-5e02-426f-a83f-7f64faf03dc9" Param="MenuAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="53e4df9d-fc8b-4615-bf17-bb166cc9b2e4" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="5fea4764-87f1-472e-897b-754afa35784f" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="f871e556-55d3-4b6c-922a-9e658a9db056" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Actions" />
+</InputValues>
+</ActMenuItem>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy2" Guid="c684951b-cfe1-4558-84cb-70628f260633" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="ec759000-8232-4f2e-8d11-d470ed90d8ce" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="9d3fd3e8-93bd-4b33-a04e-d6edc6cf740f" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="53362159-68e4-4957-9102-8d306f9492a2" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="14b6bac1-cb7e-44bb-8437-896679879d9c" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="e97f187c-67a1-4a2e-8de6-777f330312f9" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{DOWN}{ENTER}" />
+</InputValues>
+</ActSendKeys>
+<ActSendKeys Active="True" Description="Send Keys Action_Copy_Copy_Copy_Copy_Copy_Copy_Copy2" Guid="c976cece-5b44-460e-97ca-7ba555a9ff90" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="ef8d7030-3e69-4354-81a0-2f2d4d16f0fc" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByTitle" />
+<ActInputValue Guid="7ef86bf5-e5ef-4e07-aa0f-b296922fbc12" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Inventory Control" />
+<ActInputValue Guid="3266f69c-a4d9-4c62-9621-c44fabf218c0" Param="IsSendKeysSlowly" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="c56fae3b-0b14-47b4-aca8-f99ec6639cba" Param="ISWindowFocusRequired" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="96620e1b-1333-4038-ac66-95b38610e4f7" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{ENTER}" />
+</InputValues>
+</ActSendKeys>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="ACAPP116" DBValidationType="FreeSQL" Description="DataBase -  FIND the status of cards" EnableRetryMechanism="True" Guid="5652dd29-17a2-4837-9835-bd3c440a754c" MaxNumberOfRetries="3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="9a54094c-ea91-4697-86c1-b134603ac7b4" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="select sim_status from serial_item_inv where serial_number='{Var Name=FIRST_SIM}'" />
+<ActInputValue Guid="1d07791e-6996-4465-bda1-e95269efe5a1" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="65418195-3b61-444d-89a9-651de56d979f" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="11227e84-e17e-4b14-805d-57898be7b503" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="1719b1c2-1b9f-44c0-b563-aab6b57c5e6e" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="6b3a97bd-9497-443b-8cc6-87926acac5e9" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="182df199-cbd8-4c3d-b140-3d707930743f" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="840380cf-1ef4-4531-848f-ad8fba51f031" mExpected="V" Operator="Equals" Param="SIM_STATUS" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" />
+</ReturnValues>
+</ActDBValidation>
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" ActivitiesGroupID="Group" ActivityName="Updates" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="256fa509-6b98-4c73-b02f-a167c61647b0" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100,00%%" TargetApplication="MyPowerBuilderApp" Type="Regular">
+<Acts>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="ACAPP116" DBValidationType="FreeSQL" Description="DataBase -  TRANSPORT KEY UPATE" EnableRetryMechanism="True" Guid="5d1866e8-4c44-468f-a4c5-50978857600d" MaxNumberOfRetries="3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a2fd5b14-3c9c-4332-a161-d222ce14e0e0" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="update serial_item_inv set transport_key_nr='96' where trunc(sys_creation_date) = trunc(sysdate-1)" />
+<ActInputValue Guid="d09fd3d8-260c-438c-a52f-cd380d770b6c" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="8eda3b05-aed1-464d-bca2-64b6c05004bf" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b9a679c4-8e6c-4d72-bf21-0327615b2c41" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b0292131-dca0-4966-a944-5d876d986e64" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="6e0de933-d6cf-452f-b0c8-4d2bc0afe7ae" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="d02f298f-5c69-42eb-9935-09fd08598c7c" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDBValidation>
+<ActExcel Active="True" Description="Excel Action_Copy" Guid="54361036-bf8c-4ea8-9813-70f9acee2556" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="142a8d8b-2d1b-4697-84cb-061e205021f6" Param="ExcelActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ReadData" />
+<ActInputValue Guid="c26762e0-5b1d-43b6-a64d-bcd98567251f" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="eed9a4be-c85e-4abf-9c25-5a5f14ba9f53" Param="SelectAllRows" ParentGuid="00000000-0000-0000-0000-000000000000" Value="False" />
+<ActInputValue Guid="402c134f-926a-4817-84fe-bcf9912a09b8" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\physical_sim_creation.xlsx" />
+<ActInputValue Guid="8ea6b71e-1bc7-44ff-8da2-b1aef7f057ca" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="136ff704-e5ee-4409-bf1e-18d71dec5ecf" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[UPDATES] is not null" />
+<ActInputValue Guid="a261b628-0399-4b8a-b6b4-f9400553acab" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="c8923232-d5a5-4b7f-9408-a1e64fa6c162" Operator="Equals" Param="UPDATES" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="UPDATES" />
+</ReturnValues>
+</ActExcel>
+<ActExcel Active="True" Description="Excel Action" Guid="874bd193-dc0d-4eae-8d60-b5620779aec6" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="f9b54cfd-d166-46e6-8664-4c5a518affbf" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Pending" Value="ac68a1e3-5dd3-4847-a3f0-f81222381504#GUID_NAME#DataBase -  '09'updare" />
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="GoToAction" Guid="10481c31-0506-4f80-a7c1-990bda614e92" Operator="ActionFailed" ParentGuid="00000000-0000-0000-0000-000000000000" Status="Pending" Value="5600a39f-dda0-4c7b-a7b2-378086d95fc0#GUID_NAME#DataBase -  all cards update" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="40b52add-aace-42a3-899d-353c805b0351" Param="ExcelActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ReadData" />
+<ActInputValue Guid="67acc62b-5a2a-4e6b-8ddb-fe5fca1b3e8f" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="55b96469-68da-4553-8328-d89ffe2d2afb" Param="SelectAllRows" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="f2bc392c-43b6-48b2-836f-f3f9280733f1" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\physical_sim_creation.xlsx" />
+<ActInputValue Guid="adba870e-9d62-4caf-85e3-7873bce93c5b" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="b71f0f2a-8fbb-4a60-98dd-55f4ac1c8361" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID=1" />
+<ActInputValue Guid="0c28dce1-c185-4895-901e-a1782b4343bd" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="d89c9e49-ee08-42d1-bd06-c33b0a7018b4" mExpected="09" Operator="Equals" Param="CARD_TYPE" ParentGuid="00000000-0000-0000-0000-000000000000" Path="1" StoreTo="Variable" StoreToValue="CARD_TYPE" />
+</ReturnValues>
+</ActExcel>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="ACAPP116" DBValidationType="FreeSQL" Description="DataBase -  '09'updare" EnableRetryMechanism="True" Guid="ac68a1e3-5dd3-4847-a3f0-f81222381504" MaxNumberOfRetries="3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3b91691b-67fa-4d32-9500-f2686e66b01e" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="update serial_item_inv set IMSI=substr(IMSI,1,3)|| '09' || substr(IMSI,6,15) where trunc(sys_creation_date) = trunc(sysdate)" />
+<ActInputValue Guid="0b37762d-6b18-4215-898d-8c6aec551be5" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="FreeSQL" />
+<ActInputValue Guid="89600f89-1393-43fe-bc55-157a3bf9b883" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c6bbd100-059c-4c7c-a43b-b61fe00baefd" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="fe232c71-9603-4a0d-b44c-1aee5d3157ec" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="aa6bbad9-e6d6-4dc9-a46c-93fd5d92624d" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="477e983a-42c7-4147-961c-fa6dd037dd5e" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDBValidation>
+<ActDBValidation Active="True" AppName="MyPowerBuilderApp" DBName="ACAPP116" DBValidationType="UpdateDB" Description="DataBase -  all cards update" Guid="5600a39f-dda0-4c7b-a7b2-378086d95fc0" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="59966327-7ef2-4bf6-83fa-51b06c8b697d" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="update serial_item_inv set pin1='1234'  where IMSI= '262020451005735';&#xD;&#xA;update serial_item_inv set pin1='1234'  where IMSI= '262020451005735';&#xD;&#xA;update serial_item_inv set puk2='199919'  where IMSI= '262020451005735';&#xD;&#xA;update serial_item_inv set  ki='SAVVINA1234567890' where IMSI= '262020451005735';&#xD;&#xA;commit;" />
+<ActInputValue Guid="7d8f0f7e-6043-43b0-b279-b4f6a8676c45" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SqlFile" />
+<ActInputValue Guid="ba0c569a-cffa-49cf-9fbb-4e92a03a35d9" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\sims_update_queries.sql" />
+<ActInputValue Guid="7065709a-f785-4bc2-979c-aa3854a7bf78" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Value="True" />
+<ActInputValue Guid="37bb5820-f924-499d-a8df-ee455a31c3d8" Param="InsertJson" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="10b871f0-57f4-41de-a33e-b1909f4aa9dc" Param="PrimaryKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="1e11c90f-2a44-4b09-a099-c9439aa02bce" Param="PartitionKey" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDBValidation>
+</Acts>
+
+<Variables>
+<VariableString Guid="caf03df8-3aee-4b42-9b23-5006a28a50ce" InitialStringValue="02" MappedOutputType="None" Name="CARD_TYPE" ParentGuid="256fa509-6b98-4c73-b02f-a167c61647b0" ParentName="Virtual physical sim creation - MMO\Group\Updates" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="e4210fa0-caa7-4669-9800-93ca0d2e8d4e" InitialStringValue="update serial_item_inv set pin1='1234'  where IMSI= '262020451005735'&#xA;update serial_item_inv set puk2='199919'  where IMSI= '262020451005735'&#xA;update serial_item_inv set  ki='SAVVINA1234567890' where IMSI= '262020451005735'" MappedOutputType="None" Name="UPDATES" ParentGuid="256fa509-6b98-4c73-b02f-a167c61647b0" ParentName="Virtual physical sim creation - MMO\Group\Updates" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="db69d0b9-7ec5-4274-ad1e-9e70e73a8a04" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d742c53f-d5e4-46be-bf76-0f4e5b1d8d03" ActivityName="Inventory_control_Flow" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="ea95ec1f-2bba-4135-b0f6-5020a0473b16" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="adfbfbf0-b2f8-4d53-bc04-36fe9d5621e3" ActivityName="First_Job" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="508532f6-0f65-429f-b767-a4093d6035ec" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="e73ec7a2-ac64-4750-944b-b721552260c8" ActivityName="DB_Update_for_2nd_job" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="8b79fd42-cafb-45b3-af21-8be4ea830503" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="f3bead25-4ebe-4bd4-8d3b-64c614aaa61e" ActivityName="Second_Job" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="8436d6b7-64b8-4c53-bc1c-0f4ea0f93027" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="f29c1a51-06e8-4584-8efc-7b45e1d9b45b" ActivityName="Receipt" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="d1b41806-5a13-4822-af55-b8faca62031a" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="256fa509-6b98-4c73-b02f-a167c61647b0" ActivityName="Updates" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="2b5cc418-2651-4034-ac71-b18c43ce3f7c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyPowerBuilderApp" Guid="fd6f5b58-b796-438e-a6bd-7bd51521d695" LastExecutingAgentName="MyPowerBuilderApp - Agent 1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="vdwrk727" Guid="0421f85c-0ee7-40aa-a647-6715a65714dd" LastExecutingAgentName="acwrk117" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="vdwrk725" Guid="ad6effe8-c905-4ab3-9d9a-3981013986b2" LastExecutingAgentName="acwrk115" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>

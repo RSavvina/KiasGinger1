@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="98bf6d63-9763-4170-83c0-f6f583fafcfc" ItemType="Agent" CreatedBy="Savvina.Rousou" Created="202307051157" GingerVersion="5.1.0.0" Version="1" LastUpdateBy="Savvina.Rousou" LastUpdate="202307051157" />
+<Agent Active="True" AgentType="Driver" DriverType="UnixShell" Guid="98bf6d63-9763-4170-83c0-f6f583fafcfc" Name="acoln116" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix">
+<DriverConfiguration>
+<DriverConfigParam Description="Host Name or IP" Guid="40b91c3d-b262-45aa-b88c-56cc8fc8456a" Parameter="Host" ParentGuid="00000000-0000-0000-0000-000000000000" Value="adekatas" />
+<DriverConfigParam Description="User Name to use for connection" Guid="670aea43-2947-4e9a-b308-945d50e28c7a" Parameter="UserName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="acoln116" />
+<DriverConfigParam Description="Password to use for connection" Guid="34558f6d-69af-449d-ad3d-3e2fd10913d4" Parameter="Password" ParentGuid="00000000-0000-0000-0000-000000000000" Value="unix11" />
+<DriverConfigParam Description="Path to private key file to use for connection" Guid="88122e9f-4d72-4818-b38d-630acb1ef609" Parameter="PrivateKey" ParentGuid="00000000-0000-0000-0000-000000000000" Value="C:\Keys\rsakey.txt" />
+<DriverConfigParam Description="Passphrase to private key" Guid="d5bef619-7496-4ccc-b75f-c9ae859568d9" Parameter="PrivateKeyPassPhrase" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<DriverConfigParam Description="Port" Guid="84076633-fa53-4953-897b-a1ae2d705ea1" Parameter="Port" ParentGuid="00000000-0000-0000-0000-000000000000" Value="22" />
+<DriverConfigParam Description="Maximum time(in seconds) to wait for SSH Client connection" Guid="1e52568a-d8c4-44a1-8eee-9d8f33dc2e3d" Parameter="SSHConnectionTimeout" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30" />
+<DriverConfigParam Description="Enable Keyboard Intractive Authentication for Login" Guid="caab76f7-9e34-4382-8863-009feae6b78f" Parameter="KeyboardIntractiveAuthentication" ParentGuid="00000000-0000-0000-0000-000000000000" Value="false" />
+<DriverConfigParam Description="Implicit Wait for Console Action Completion" Guid="7cfd2b34-7d99-45b4-967b-677162cfeb56" Parameter="ImplicitWait" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30" />
+<DriverConfigParam Description="The amount of maximum time (in seconds) to wait for the driver to load/connect" Guid="77f81819-be8a-49be-8551-d69da21c82de" Parameter="DriverLoadWaitingTime" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30" />
+</DriverConfiguration>
+</Agent></GingerRepositoryItem>
